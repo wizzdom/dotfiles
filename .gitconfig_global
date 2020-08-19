@@ -1,6 +1,6 @@
 [user]
-	email = 
-  name = Dominic Connor
+	email = # Insert Email Here
+  name = wizzdom
   username = wizzdom
 
 [core]
@@ -14,7 +14,7 @@
   compression = 9
   # tells git to ignore file permission changes
   # filemode = false
-  pager = 'less -FRSX'
+  pager = 'less'
 
 [web]
   browser = firefox
@@ -50,11 +50,11 @@
 
 [github]
   user = wizzdom
-  token = 
+  token = # insert GitHub user token here
 
 [gitlab]
   user = wizzdom
-  token = 
+  token = # Insert GitLab user token here
 
 
 [alias]
