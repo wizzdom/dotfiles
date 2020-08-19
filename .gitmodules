@@ -1,3 +1,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/wizzdom/zsh
+[submodule ".config/awesome"]
+	path = .config/awesome
+	url = https://github.com/wizzdom/material-awesome
