@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/wizzdom'
+let g:netrw_dirhist_8='/home/wizzdom/.config/awesome/configuration/keys'
+let g:netrw_dirhist_7='/home/wizzdom/.config/awesome/configuration'
+let g:netrw_dirhist_6='/home/wizzdom/.config/awesome'
+let g:netrw_dirhist_5='/home/wizzdom/.config/awesome/module'
+let g:netrw_dirhist_4='/home/wizzdom/.config/awesome'
+let g:netrw_dirhist_3='/home/wizzdom/.config/awesome/configuration'
+let g:netrw_dirhist_2='/home/wizzdom/.config/awesome'
+let g:netrw_dirhist_1='/home/wizzdom'
