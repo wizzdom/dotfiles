@@ -13,6 +13,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vimwiki/vimwiki'
 "Language Support
 Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "Nerdtree
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
@@ -30,7 +31,7 @@ set mouse=a
 	set shiftwidth=2
 	set expandtab
 	set smartindent
-    set nofoldenable
+  set foldenable
 	set nowrap
 	set smartcase
 	set noswapfile
@@ -86,7 +87,8 @@ set mouse=a
 	map <C-\> :Goyo<CR>
 	vnoremap <C-c> "+y
 	nnoremap <F5> :UndotreeToggle<CR> :UndotreeFocus<CR>
-    nnoremap <Leader>i :w !ix<CR>
+  nnoremap <Leader>i :w !ix<CR>
+"  nnoremap <Leader> :MarkdownPreview<CR> :MarkdownPreviewStop<CR>
 
 " Persistent_undo
 	set undodir=~/.vim/undodir"
@@ -110,8 +112,8 @@ set mouse=a
   autocmd FileType *sh inoremap ,ca )<Space><++><Space>;;<CR><++><Esc>?)<CR>i
 
 
-" markdown
-  autocmd FileType markdown noremap <leader>r i---<CR>title:<Space><++><CR>author:<Space>"Brodie Robertson"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
+" Markdown
+  autocmd FileType markdown noremap <leader>r i---<CR>title:<Space><++><CR>author:<Space>"Dominic Connor"<CR>geometry:<CR>-<Space>top=30mm<CR>-<Space>left=20mm<CR>-<Space>right=20mm<CR>-<Space>bottom=30mm<CR>header-includes:<Space>\|<CR><Tab>\usepackage{float}<CR>\let\origfigure\figure<CR>\let\endorigfigure\endfigure<CR>\renewenvironment{figure}[1][2]<Space>{<CR><Tab>\expandafter\origfigure\expandafter[H]<CR><BS>}<Space>{<CR><Tab>\endorigfigure<CR><BS>}<CR><BS>---<CR><CR>
   autocmd FileType markdown inoremap ,i ![](<++>){#fig:<++>}<Space><CR><CR><++><Esc>kkF]i
   autocmd FileType markdown inoremap ,a [](<++>)<Space><++><Esc>F]i
   autocmd FileType markdown inoremap ,1 #<Space><CR><CR><++><Esc>2k<S-a>
@@ -122,6 +124,74 @@ set mouse=a
   autocmd FileType markdown inoremap ,u +<Space><CR><++><Esc>1k<S-a>
   autocmd FileType markdown inoremap ,o 1.<Space><CR><++><Esc>1k<S-a>
   autocmd FileType markdown inoremap ,f +@fig:
+
+" Markdown Preview
+
+  " set to 1, nvim will open the preview window after entering the markdown buffer
+" default: 0
+let g:mkdp_auto_start = 0
+
+" set to 1, the nvim will auto close current preview window when change
+" from markdown buffer to another buffer
+" default: 1
+let g:mkdp_auto_close = 1
+
+" set to 1, the vim will refresh markdown when save the buffer or
+" leave from insert mode, default 0 is auto refresh markdown as you edit or
+" move the cursor
+" default: 0
+let g:mkdp_refresh_slow = 0
+
+" set to 1, the MarkdownPreview command can be use for all files,
+" by default it can be use in markdown file
+" default: 0
+let g:mkdp_command_for_global = 0
+
+" set to 1, preview server available to others in your network
+" by default, the server listens on localhost (127.0.0.1)
+" default: 0
+let g:mkdp_open_to_the_world = 0
+
+" use custom IP to open preview page
+let g:mkdp_open_ip = ''
+
+" specify browser to open preview page
+let g:mkdp_browser = 'firefox'
+
+" set to 1, echo preview page url in command line when open preview page
+let g:mkdp_echo_preview_url = 0
+
+" a custom vim function name to open preview page
+" this function will receive url as param
+let g:mkdp_browserfunc = ''
+
+let g:mkdp_preview_options = {
+    \ 'mkit': {},
+    \ 'katex': {},
+    \ 'uml': {},
+    \ 'maid': {},
+    \ 'disable_sync_scroll': 0,
+    \ 'sync_scroll_type': 'middle',
+    \ 'hide_yaml_meta': 1,
+    \ 'sequence_diagrams': {},
+    \ 'flowchart_diagrams': {},
+    \ 'content_editable': v:false
+    \ }
+
+" use a custom markdown style must be absolute path
+" like '/Users/username/markdown.css' or expand('~/markdown.css')
+" let g:mkdp_markdown_css = ''
+
+" use a custom highlight style must absolute path
+" like '/Users/username/highlight.css' or expand('~/highlight.css')
+" let g:mkdp_highlight_css = ''
+
+" use a custom port to start server or random for empty
+  let g:mkdp_port = ''
+
+" preview page title
+" ${name} will be replace with the file name
+  let g:mkdp_page_title = '「${name}」'
 
 " Vimwiki markdown syntax
   let g:vimwiki_list = [{'path': '~/vimwiki/',
@@ -144,10 +214,9 @@ set mouse=a
 
 " Markdown Edits
     let g:vim_markdown_autowrite = 1
-    let g:vim_markdown_no_extensions_in_markdown = 1
+    let g:vim_markdown_no_extensions_in_markdown = 0
     let g:vim_markdown_conceal = 0
-    let g:vim_markdown_override_foldtext = 0
-    let g:vim_markdown_folding_disabled = 1
+    let g:vim_markdown_folding_disabled = 0
 
 "Make vim colours work in alacritty
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
