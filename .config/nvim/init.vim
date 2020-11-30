@@ -11,6 +11,7 @@ Plug 'itchyny/lightline.vim' "bottom bar
 "Misc
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'vimwiki/vimwiki'
+Plug 'preservim/nerdcommenter'
 "Language Support
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
@@ -92,6 +93,10 @@ set mouse=a
   nnoremap <Leader>i :w !ix<CR>
   nmap <space>e :CocCommand explorer<CR>
 "  nnoremap <Leader> :MarkdownPreview<CR> :MarkdownPreviewStop<CR>
+  map <C-_> :NERDCommenterToggle<CR>
+
+
+
 
 " Persistent_undo
 	set undodir=~/.vim/undodir"
