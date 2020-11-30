@@ -18,7 +18,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexoinase'}
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase'}
+" coc - Conquerer of Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 " --
 
@@ -88,6 +90,7 @@ set mouse=a
 	vnoremap <C-c> "+y
 	nnoremap <F5> :UndotreeToggle<CR> :UndotreeFocus<CR>
   nnoremap <Leader>i :w !ix<CR>
+  nmap <space>e :CocCommand explorer<CR>
 "  nnoremap <Leader> :MarkdownPreview<CR> :MarkdownPreviewStop<CR>
 
 " Persistent_undo
