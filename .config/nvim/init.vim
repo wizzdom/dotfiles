@@ -52,8 +52,8 @@ set mouse=a
 " Colours and appearance
 	colorscheme codedark
     set background=dark
-    "set termguicolors
-"    hi Normal guibg=NONE ctermbg=NONE
+    set termguicolors
+    hi Normal guibg=NONE ctermbg=NONE
     let g:lightline = {
           \ 'colorscheme': 'codedark',
           \ }
