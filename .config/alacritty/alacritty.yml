@@ -82,7 +82,7 @@ font:
     family: Fira Code Nerd Font
 
   # Point size
-  size: 10
+  size: 8
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -211,7 +211,7 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
 
@@ -420,9 +420,6 @@ key_bindings:
   - { key: Y, mods: Control, action: Copy }
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Add, mods: Control, action: IncreaseFontSize }
-  - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
     # Vi Mode
   - { key: Space,  mods: Control,       mode: Vi, action: ScrollToBottom          }
   - { key: Space,  mods: Control,                 action: ToggleViMode            }
