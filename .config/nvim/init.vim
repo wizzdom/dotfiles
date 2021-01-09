@@ -20,6 +20,7 @@ Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase'}
+Plug 'baskerville/vim-sxhkdrc',
 " coc - Conquerer of Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
@@ -53,7 +54,7 @@ set mouse=a
 	colorscheme codedark
     set background=dark
     set termguicolors
-    hi Normal guibg=NONE ctermbg=NONE
+    "hi Normal guibg=NONE ctermbg=NONE
     let g:lightline = {
           \ 'colorscheme': 'codedark',
           \ }
