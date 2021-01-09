@@ -1,0 +1,10 @@
+# Simple X Hotkey Daemon (sxhkd) Config
+
+# Syntax:
+# [MODIFIER + ]*[@|!]KEYSYM
+#   COMMAND
+
+# Programs:
+# Lock Screen
+super + l
+  i3lock-fancy
