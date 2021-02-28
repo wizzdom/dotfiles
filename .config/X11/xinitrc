@@ -1,0 +1,5 @@
+setxkbmap ie -option "caps:swapescape" &
+xbanish &
+pulseaudio &
+
+exec awesome
