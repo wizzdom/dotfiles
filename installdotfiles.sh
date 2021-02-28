@@ -23,12 +23,26 @@ ln -sf $HOME/.dotfiles/.vim/ $HOME/.vim
 # Awesome WM 
 ln -sf $HOME/.dotfiles/.config/awesome/ $HOME/.config/awesome/
 # application configs (.config)
-ln -sf $HOME/.dotfiles/.config/terminator/config $HOME/.config/terminator/config
-ln -sf $HOME/.dotfiles/.config/neofetch/config.conf $HOME/.config/neofetch/config.conf
-ln -sf $HOME/.dotfiles/.config/fontconfig $HOME/.config/fontconfig
-ln -sf $HOME/.dotfiles/.config/htop $HOME/.config/htop/
+ln -sf $HOME/.dotfiles/.config/terminator $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/neofetch $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/fontconfig $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/htop $HOME/.config/
 # ln -sf $HOME/.dotfiles/.config/remmina/remmina.pref $HOME/.config/remmina/remmina.pref
-ln -sf $HOME/.dotfiles/.config/pcmanfm $HOME/.config/pcmanfm
-ln -sf $HOME/.dotfiles/.config/pnmixer $HOME/.config/pnmixer
+ln -sf $HOME/.dotfiles/.config/pcmanfm $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/pnmixer $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/news-flash $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/screenlayout $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/rofi $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/viper4linux $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/alacritty $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/redshift $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/paru  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/sxhkd  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/cantata  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/nvim  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/X11  $HOME/.config/
 
+ln -sf $HOME/.dotfiles/.config/linux-steam-integration.conf $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/pavucontrol.ini  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/mimeapps.list  $HOME/.config/
 echo 'done.'
