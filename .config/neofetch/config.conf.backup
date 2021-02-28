@@ -11,7 +11,7 @@ print_info() {
     info "Packages" packages
     info "Shell" shell
     info "Resolution" resolution
-    info "DE" de
+    # info "DE" de
     info "WM" wm
     info "WM Theme" wm_theme
     info "Theme" theme
@@ -19,15 +19,15 @@ print_info() {
     info "Terminal" term
     info "Terminal Font" term_font
     info "CPU" cpu
+    info "CPU Usage" cpu_usage
     info "GPU" gpu
     info "Memory" memory
 
     # info "GPU Driver" gpu_driver  # Linux/macOS only
-    # info "CPU Usage" cpu_usage
     # info "Disk" disk
-    # info "Battery" battery
+    info "Battery" battery
     # info "Font" font
-    # info "Song" song
+    info "Song" song
     # [[ "$player" ]] && prin "Music Player" "$player"
     # info "Local IP" local_ip
     # info "Public IP" public_ip
@@ -101,7 +101,7 @@ os_arch="on"
 # on:   '2 days, 10 hours, 3 mins'
 # tiny: '2d 10h 3m'
 # off:  '2 days, 10 hours, 3 minutes'
-uptime_shorthand="on"
+uptime_shorthand="tiny"
 
 
 # Memory
@@ -116,7 +116,7 @@ uptime_shorthand="on"
 # Example:
 # on:   '1801MiB / 7881MiB (22%)'
 # off:  '1801MiB / 7881MiB'
-memory_percent="off"
+memory_percent="on"
 
 # Change memory output unit.
 #
@@ -159,7 +159,7 @@ package_managers="on"
 # Example:
 # on:  '/bin/bash'
 # off: 'bash'
-shell_path="off"
+shell_path="on"
 
 # Show $SHELL version
 #
@@ -249,7 +249,7 @@ cpu_cores="logical"
 # C:   'Intel i7-6500U (4) @ 3.1GHz [27.2°C]'
 # F:   'Intel i7-6500U (4) @ 3.1GHz [82.0°F]'
 # off: 'Intel i7-6500U (4) @ 3.1GHz'
-cpu_temp="off"
+cpu_temp="C"
 
 
 # GPU
@@ -325,7 +325,7 @@ gtk_shorthand="off"
 # Example:
 # on:  'Numix [GTK2], Adwaita [GTK3]'
 # off: 'Adwaita [GTK3]'
-gtk2="on"
+gtk2="off"
 
 # Enable/Disable gtk3 Theme / Icons / Font
 #
@@ -336,7 +336,7 @@ gtk2="on"
 # Example:
 # on:  'Numix [GTK2], Adwaita [GTK3]'
 # off: 'Numix [GTK2]'
-gtk3="on"
+gtk3="off"
 
 
 # IP Address
@@ -488,7 +488,7 @@ music_player="auto"
 #
 # Example:
 # default: 'Song: Jet - Get Born - Sgt Major'
-song_format="%artist% - %album% - %title%"
+song_format="%title% - %artist% - %album%"
 
 # Print the Artist, Album and Title on separate lines
 #
@@ -679,9 +679,9 @@ bar_color_total="distro"
 # infobar: 'info [---=======]'
 # barinfo: '[---=======] info'
 # off:     'info'
-cpu_display="off"
-memory_display="off"
-battery_display="off"
+cpu_display="barinfo"
+memory_display="barinfo"
+battery_display="barinfo"
 disk_display="off"
 
 

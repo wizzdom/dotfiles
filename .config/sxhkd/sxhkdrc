@@ -7,4 +7,84 @@
 # Programs:
 # Lock Screen
 super + l
-  i3lock-fancy
+    i3lock-fancy
+# Screenshot 1
+super + control + print
+# Screenshot 2
+print
+# Screenshot 3
+control + print
+# Launch VSCode
+super + c
+    vscodium
+# Browser 1 (Firefox)
+super + b
+    firefox
+# Browser 2 (Brave)
+super + shift + b
+    brave
+# Mail (Birdtray)
+super + m
+    birdtray -t
+# Music Player
+super + shift + m
+    cantata
+# Terminal
+super + enter
+    alacritty
+# File Manager
+super + e
+    pcmanfm
+
+# Rofi run 
+super + r
+    
+
+# Control Laptop Brightness
+# Brightness +10%
+XFMonBrightnessUp
+    xbacklight -inc 10
+
+# Brightness -10%
+    xbacklight -dec 10
+
+# ALSA Volume Control
+# Raise Volume
+XF86AudioRaiseVolume
+    amixer -D pulse sset Master 5%+
+# Lower Volume
+XF86AudioLowerVolume
+    amixer -D pulse sset Master 5%+
+# Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+# Media Keys
+# Play/Pause
+XF86AudioPlay
+    playerctl play-pause
+# Next Track
+XF86AudioNext
+    playerctl next
+# Previous Track
+XF86AudioPrev
+    playerctl previous
+# Stop Media
+XF86AudioStop
+    playerctl stop
+
+# Custom Media Keys for ThinkPad useless keys
+# Play/Pause
+XF86Tools
+    playerctl play-pause
+# Next Track
+XF86LunchA
+    playctl next
+# Previous Track
+XF86Search
+    playerctl previous
+# Stop Media
+XF86Explorer
+    playerctl stop
+
+
