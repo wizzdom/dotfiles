@@ -1,8 +1,18 @@
+/**
+ * ROFI Color theme
+ * NAME: dt-dmenu.rasi
+ * DESCRIPTION: This is a horizontal prompt similar to dmenu.
+ * ORIGINAL AUTHOR: Derek Taylor (DT)
+ * MODIFIED BY: WIZZDOM
+ */
+
+
+* {
     background-color:           #282c34;
     border-color:               #282c34;
     text-color:                 #bbc2cf;
-    height:                     20px;
-    font:                       "SauceCodePro Nerd Font Mono 9";
+    height:                     24px;
+    font:                       "Fira Code Medium Nerd Font Mono 9";
     prompt-font:                "Ubuntu Bold 9";
     prompt-background:          #51afef;
     prompt-foreground:          #282c34;
