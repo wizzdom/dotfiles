@@ -1,5 +1,6 @@
 " vimrc by WIZZDOM
 
+
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -27,6 +28,10 @@ set noshowmode
 set mouse=a
 syntax on
 filetype plugin on
+
+if exists('g:vscode')
+
+else
 
 call plug#begin('~/.vim/plugged')
 Plug 'mbbill/undotree', 
@@ -109,4 +114,4 @@ let g:mkdp_preview_options = {
     \ 'flowchart_diagrams': {},
     \ 'content_editable': v:false
     \ }
-
+endif
