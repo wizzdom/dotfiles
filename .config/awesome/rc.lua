@@ -630,6 +630,8 @@ awful.rules.rules = {
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
           "Wpa_gui",
           "veromix",
+          "qalculate-gtk",
+          "Qalculate-gtk",
           "xtightvncviewer"},
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
@@ -637,6 +639,11 @@ awful.rules.rules = {
         name = {
           "Event Tester",  -- xev.
           "Friends List",
+          "Steam - News (1 of 5)",
+          "Steam - News (1 of 4)",
+          "Steam - News (1 of 3)",
+          "Steam - News (1 of 2)",
+          "Steam - News (1 of 1)",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.

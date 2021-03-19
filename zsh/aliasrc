@@ -25,7 +25,10 @@ ex ()
 }
 
 
+# Pacman aliases
 alias pacman-update='sudo pacman-mirrors --geoip'
+alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
+alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
 
 #alias ls='ls --color=auto'
 #alias ll='ls -l'

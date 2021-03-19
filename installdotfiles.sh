@@ -41,6 +41,7 @@ ln -sf $HOME/.dotfiles/.config/sxhkd  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/cantata  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/nvim  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/X11  $HOME/.config/
+ln -sf $HOME/.dotfiles/.config/BetterDiscord $HOME/.config/
 
 ln -sf $HOME/.dotfiles/.config/linux-steam-integration.conf $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/pavucontrol.ini  $HOME/.config/
