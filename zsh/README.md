@@ -1,12 +1,18 @@
-# zsh
+# ZSH
 
-My ZSH Config - forked from [ChrisTitusTech](https://github.com/ChrisTitusTech/zsh)
+My ZSH Config initially forked from [ChrisTitusTech](https://github.com/ChrisTitusTech/zsh), but now is more customised to my workflow.
 
-## Setup
-
+## Standalone Setup
+Use the commands below for manual standalone installation.
 ```
-cd ~/
-git clone --recursive https://github.com/wizzdom/zsh
+cd $HOME
+mkdir -p $HOME/zsh
+curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/.zshrc > $HOME/zsh/.zshrc
+curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/aliasrc > $HOME/zsh/aliasrc
+curl -l https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zprofile > $HOME/zsh/.zprofile
+curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zshenv > $HOME/zsh/zshenv
+curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.p10k.zsh > $HOME/zsh/.p10k.zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/zsh/powerlevel10k
 ln -s -f ~/zsh/.zshrc ~/.zshrc
 ln -s -f ~/zsh/.p10k.zsh ~/.p10k.zsh
 touch "~/.cache/zshhistory"
@@ -19,10 +25,10 @@ touch "~/.cache/zshhistory"
 - **autojump** - jump to directories with `j` or `jc` for child or `jo` to open in file manager
 - **zsh-autosuggestions** - Suggestions based on your history
 
-### Arch linux
+### Arch linux (paru)
 
 ```
-yay -S --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
+paru -S --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 ```
 
 ### Ubuntu/Debian
@@ -30,7 +36,5 @@ yay -S --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 ```
 sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 ```
-
-_powerlevel10k prompt is included as a git submodule (it will be downloaded as part of the git clone)_
 
 Finish the conversion by changing your user in `/etc/passwd` to `/bin/zsh` instead of `/bin/bash` or by typing `chsh $USER` and entering `/bin/zsh`
