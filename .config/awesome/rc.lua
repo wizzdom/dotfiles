@@ -60,7 +60,7 @@ editor_cmd = terminal .. " -e " .. editor
 browser = "firefox"
 alt_browser = "brave"
 lock = "i3lock-fancy-multimonitor -n -b=5x8"
-screenshot = "flameshot gui -p ~/Pictures/screenshot/"
+screenshot = "flameshot gui -p $HOME/Pictures/screenshot/"
 files = "pcmanfm"
 music = "cantata"
 mail = "birdtray -t"
@@ -299,7 +299,7 @@ globalkeys = gears.table.join(
               {description = "toggle view mail", group = "launcher"}),
     awful.key({ modkey,           }, "r", function () awful.spawn("rofi -show drun") end,
               {description = "dmenu", group = "launcher"}),
-    awful.key({ "Print",           }, "", function () awful.spawn(screenshot) end,
+    awful.key({ modkey,           }, "Print", function () awful.spawn("flameshot gui -p /home/wizzdom/Pictures/screenshot") end,
               {description = "Screenshot", group = "launcher"}),
     -- Brightness
   awful.key(
@@ -639,6 +639,7 @@ awful.rules.rules = {
         name = {
           "Event Tester",  -- xev.
           "Friends List",
+          "Picture in picture",
           "Steam - News (1 of 5)",
           "Steam - News (1 of 4)",
           "Steam - News (1 of 3)",
