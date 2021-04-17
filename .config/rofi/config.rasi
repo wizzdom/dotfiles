@@ -1,3 +1,12 @@
 configuration {
+    modi: "drun,run,ssh,combi";
 	theme: "~/.config/rofi/themes/dmenu.rasi";
+    show-icons: true;
+    icon-theme: "Papirus Dark";
+    combi-modi: "drun,run,ssh";
+    drun-show-actions: false;
+    display-drun: "";
+    display-run: "";
+    display-ssh: "ssh";
+    display-combi: "Run:";
 }

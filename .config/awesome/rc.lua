@@ -297,7 +297,7 @@ globalkeys = gears.table.join(
               {description = "open alt browser (brave)", group = "launcher"}),
     awful.key({ modkey,           }, "m", function () awful.spawn(mail) end,
               {description = "toggle view mail", group = "launcher"}),
-    awful.key({ modkey,           }, "r", function () awful.spawn("rofi -show drun") end,
+    awful.key({ modkey,           }, "r", function () awful.spawn("rofi -show combi") end,
               {description = "dmenu", group = "launcher"}),
     awful.key({ modkey,           }, "Print", function () awful.spawn("flameshot gui -p /home/wizzdom/Pictures/screenshot") end,
               {description = "Screenshot", group = "launcher"}),

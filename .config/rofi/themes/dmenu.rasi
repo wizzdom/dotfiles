@@ -8,13 +8,13 @@
 
 
 * {
-    background-color:           #282c34;
-    border-color:               #282c34;
+    background-color:           #111111;
+    border-color:               #111111;
     text-color:                 #bbc2cf;
     height:                     24px;
-    font:                       "Fira Code Medium Nerd Font Mono 9";
-    prompt-font:                "Ubuntu Bold 9";
-    prompt-background:          #51afef;
+    font:                       "Fira Sans Medium 10";
+    prompt-font:                "Fira Sans Medium 10";
+    prompt-background:          #40a4ff;
     prompt-foreground:          #282c34;
     prompt-padding:             2px;
     selected-normal-background: #ae3f3e;
