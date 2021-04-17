@@ -12,6 +12,7 @@ curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/aliasrc > 
 curl -l https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zprofile > $HOME/zsh/.zprofile
 curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zshenv > $HOME/zsh/zshenv
 curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.p10k.zsh > $HOME/zsh/.p10k.zsh
+curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/ghcli.zsh > $HOME/zsh/ghcli.zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/zsh/powerlevel10k
 ln -s -f ~/zsh/.zshrc ~/.zshrc
 ln -s -f ~/zsh/.p10k.zsh ~/.p10k.zsh
