@@ -9,6 +9,7 @@ require("awful.autofocus")
 
 -- Widget and layout library
 local wibox = require("wibox")
+local lain = require("lain")
 
 -- Theme handling library
 local beautiful = require("beautiful")
@@ -64,6 +65,8 @@ screenshot = "flameshot gui -p $HOME/Pictures/screenshot/"
 files = "pcmanfm"
 music = "cantata"
 mail = "birdtray -t"
+rofi = "rofi -show combi" 
+power = "rofi -show power-menu -modi power-menu:rofi-power-menu"
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
@@ -95,6 +98,9 @@ awful.layout.layouts = {
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
+
+xdg_menu = require("archmenu")
+
 myawesomemenu = {
    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
    { "manual", terminal .. " -e man awesome" },
@@ -104,7 +110,10 @@ myawesomemenu = {
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+                                    { "Applications", xdgmenu},
+                                    { "rofi", rofi },
+                                    { "open terminal", terminal },
+                                    { "Power Menu", power},
                                   }
                         })
 
@@ -162,30 +171,20 @@ local tasklist_buttons = gears.table.join(
                                               awful.client.focus.byidx(-1)
                                           end))
 
--- local function set_wallpaper(s)
---     -- Wallpaper
---     if beautiful.wallpaper then
---         local wallpaper = beautiful.wallpaper
---         -- If wallpaper is a function, call it with the screen
---         if type(wallpaper) == "function" then
---             wallpaper = wallpaper(s)
---         end
---         gears.wallpaper.maximized(wallpaper, s, true)
---     end
--- end
-
--- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
--- screen.connect_signal("property::geometry", set_wallpaper)
-
 awful.screen.connect_for_each_screen(function(s)
-    -- Wallpaper
-    -- set_wallpaper(s)
+
+-- Define lain widgets
+local cpu = lain.widget.cpu {
+    settings = function()
+        widget:set_markup("CPU:" .. cpu_now.usage .. "% ")
+    end
+}
 
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
-    s.mypromptbox = awful.widget.prompt()
+    -- s.mypromptbox = awful.widget.prompt()
     -- Create an imagebox widget which will contain an icon indicating which layout we're using.
     -- We need one layoutbox per screen.
     s.mylayoutbox = awful.widget.layoutbox(s)
@@ -209,7 +208,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s, opacity=0.9 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -218,12 +217,13 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mylauncher,
             s.mytaglist,
-            s.mypromptbox,
+            -- s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
+            cpu.widget,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
@@ -291,13 +291,15 @@ globalkeys = gears.table.join(
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey,           }, "q", function () awful.spawn(lock) end,
               {description = "lock screen", group = "launcher"}),
+    awful.key({ modkey,           }, "e", function () awful.spawn(files) end,
+              {description = "Launch File Manager", group = "launcher"}),
     awful.key({ modkey,           }, "b", function () awful.spawn(browser) end,
               {description = "open browser (firefox)", group = "launcher"}),
     awful.key({ modkey, "Shift"   }, "b", function () awful.spawn(altbrowser) end,
               {description = "open alt browser (brave)", group = "launcher"}),
     awful.key({ modkey,           }, "m", function () awful.spawn(mail) end,
               {description = "toggle view mail", group = "launcher"}),
-    awful.key({ modkey,           }, "r", function () awful.spawn("rofi -show combi") end,
+    awful.key({ modkey,           }, "r", function () awful.spawn(rofi) end,
               {description = "dmenu", group = "launcher"}),
     awful.key({ modkey,           }, "Print", function () awful.spawn("flameshot gui -p /home/wizzdom/Pictures/screenshot") end,
               {description = "Screenshot", group = "launcher"}),
@@ -478,7 +480,9 @@ globalkeys = gears.table.join(
     --               }
     --           end,
     --           {description = "lua execute prompt", group = "awesome"}),
+
     -- Menubar
+
     -- awful.key({ modkey }, "r", function() menubar.show() end,
     --           {description = "show the menubar", group = "launcher"})
  )
