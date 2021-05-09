@@ -42,6 +42,8 @@ ln -sf $HOME/.dotfiles/.config/cantata  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/nvim  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/X11  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/BetterDiscord $HOME/.config/
+[[ ! -f $HOME/.config/mpd ]] && mkdir -p $HOME/.config/mpd
+ln -s $HOME/.dotfiles/.config/mpd/mpd.conf $HOME/.config/mpd/
 
 ln -sf $HOME/.dotfiles/.config/linux-steam-integration.conf $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/pavucontrol.ini  $HOME/.config/
