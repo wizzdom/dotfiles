@@ -44,6 +44,8 @@ ln -sf $HOME/.dotfiles/.config/X11  $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/BetterDiscord $HOME/.config/
 [[ ! -f $HOME/.config/mpd ]] && mkdir -p $HOME/.config/mpd
 ln -s $HOME/.dotfiles/.config/mpd/mpd.conf $HOME/.config/mpd/
+[[ ! -f $HOME/.config/mpDris2 ]] && mkdir -p $HOME/.config/mpDris2
+ln -s $HOME/.dotfiles/.config/mpDris2/mpDris2.conf $HOME/.config/mpDris2/
 
 ln -sf $HOME/.dotfiles/.config/linux-steam-integration.conf $HOME/.config/
 ln -sf $HOME/.dotfiles/.config/pavucontrol.ini  $HOME/.config/
