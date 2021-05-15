@@ -20,4 +20,5 @@ run birdtray # Birdtray - Thunderbird in tray
 run mpDris2 # Mpris support for the Music Player Daemon
 run viper-gui -st # Launch viper and keep gui in tray
 #run steam -silent # Launch steam in background
+run syncthing --no-browser # Syncthing - file sync
 run setxkbmap ie -option "caps:swapescape"
