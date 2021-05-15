@@ -58,7 +58,7 @@ beautiful.init(theme_path)
 terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
-browser = "firefox"
+browser = "librewolf"
 alt_browser = "brave"
 lock = "i3lock-fancy-multimonitor -n -b=5x8"
 screenshot = "flameshot gui -p $HOME/Pictures/screenshot/"
@@ -294,7 +294,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "e", function () awful.spawn(files) end,
               {description = "Launch File Manager", group = "launcher"}),
     awful.key({ modkey,           }, "b", function () awful.spawn(browser) end,
-              {description = "open browser (firefox)", group = "launcher"}),
+              {description = "open browser (librewolf)", group = "launcher"}),
     awful.key({ modkey, "Shift"   }, "b", function () awful.spawn(altbrowser) end,
               {description = "open alt browser (brave)", group = "launcher"}),
     awful.key({ modkey,           }, "m", function () awful.spawn(mail) end,
