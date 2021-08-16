@@ -1,6 +1,6 @@
 # dotfiles
 
-All of my dotfiles in one place for convenience...USE AT YOUR OWN RISK!
+All of my dotfiles in one place for convenience...
 
 ## Setup
 ### Clone the repo
@@ -15,5 +15,9 @@ git clone --recursive https://github.com/wizzdom/dotfiles $HOME/.dotfiles
 Requires GNU Stow.
 ```
 cd $HOME/.dotfiles
+# to add all configs:
 stow */
+
+# or to add specific configs (e.g. awesome):
+stow awesome
 ```
