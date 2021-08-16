@@ -1,0 +1,4 @@
+setxkbmap ie -option "caps:swapescape" &
+xbanish &
+
+exec awesome

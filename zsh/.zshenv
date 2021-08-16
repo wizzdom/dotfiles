@@ -43,9 +43,14 @@ export PAGER="less"
 export WM="awesome"
 
 # Path
-export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.local/bin:~/scripts
 
 # Values for shader caching for use in gaming.
 export __GL_SHADER_DISK_CACHE=1
 export __GL_SHADER_DISK_CACHE_PATH='/tmp/nvidia-shaders'
 export __GL_THREADED_OPTIMIZATION=1
+
+
+export MANGOHUD=1
+
+export _microarchitecture=36
