@@ -1,3 +1,7 @@
 .gitconfig_global
 .config/nvim/undodir/
 .config/BetterDiscord/emote_data.json
+
+viper4linux/.config/viper4linux/audio.conf
+
+zsh/powerlevel10k/
