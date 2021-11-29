@@ -762,19 +762,14 @@ awful.rules.rules = {
           "Wpa_gui",
           "veromix",
           "viper-gui",
+          "jamesdsp",
           "xtightvncviewer"},
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
         -- and the name shown there might not match defined rules here.
         name = {
           "Event Tester",  -- xev.
-          "Friends List",
           "Picture in Picture",
-          "Steam - News (1 of 5)",
-          "Steam - News (1 of 4)",
-          "Steam - News (1 of 3)",
-          "Steam - News (1 of 2)",
-          "Steam - News (1 of 1)",
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.

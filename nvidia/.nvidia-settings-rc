@@ -2,7 +2,7 @@
 # /home/wizzdom/.nvidia-settings-rc
 #
 # Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
-# Generated on Sat Sep  4 11:32:26 2021
+# Generated on Thu Nov 18 17:52:19 2021
 #
 
 # ConfigProperties:
@@ -13,9 +13,9 @@ SliderTextEntries = Yes
 IncludeDisplayNameInConfigFile = No
 ShowQuitDialog = Yes
 UpdateRulesOnProfileNameChange = Yes
-Timer = Memory_Used_(GPU_0),Yes,3000
-Timer = Thermal_Monitor_(GPU_0),Yes,1000
 Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = Memory_Used_(GPU_0),Yes,3000
 
 # Attributes:
 
@@ -62,6 +62,12 @@ Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 [DPY:HDMI-0]/ColorSpace=0
 [DPY:HDMI-0]/ColorRange=0
 [DPY:HDMI-0]/SynchronousPaletteUpdates=0
+[DPY:HDMI-1]/Dithering=0
+[DPY:HDMI-1]/DitheringMode=0
+[DPY:HDMI-1]/DitheringDepth=0
+[DPY:HDMI-1]/ColorSpace=0
+[DPY:HDMI-1]/ColorRange=0
+[DPY:HDMI-1]/SynchronousPaletteUpdates=0
 [DPY:DP-0]/Dithering=0
 [DPY:DP-0]/DitheringMode=0
 [DPY:DP-0]/DitheringDepth=0
@@ -74,3 +80,15 @@ Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
 [DPY:DP-1]/ColorSpace=0
 [DPY:DP-1]/ColorRange=0
 [DPY:DP-1]/SynchronousPaletteUpdates=0
+[DPY:DP-2]/Dithering=0
+[DPY:DP-2]/DitheringMode=0
+[DPY:DP-2]/DitheringDepth=0
+[DPY:DP-2]/ColorSpace=0
+[DPY:DP-2]/ColorRange=0
+[DPY:DP-2]/SynchronousPaletteUpdates=0
+[DPY:DP-3]/Dithering=0
+[DPY:DP-3]/DitheringMode=0
+[DPY:DP-3]/DitheringDepth=0
+[DPY:DP-3]/ColorSpace=0
+[DPY:DP-3]/ColorRange=0
+[DPY:DP-3]/SynchronousPaletteUpdates=0
