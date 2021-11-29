@@ -444,8 +444,8 @@ def_key "i"
 def_key "g"
   jump_to_position_in_song
 
-# def_key "l"
-# show_lyrics
+def_key "L"
+  show_lyrics
 
 def_key "ctrl-v"
   select_range

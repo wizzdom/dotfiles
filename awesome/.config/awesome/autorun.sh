@@ -7,14 +7,14 @@ function run {
   fi
 }
 
-run picom --experimental-backends # compositor
+# run picom --experimental-backends # compositor
 run nitrogen --restore # wallpaper setter
 run nm-applet --indicator # wifi/network indicator
-run pulseaudio --daemonize
-run start-pulseaudio-x11
-run viper-gui -st # Launch viper and keep gui in tray
+# run pulseaudio --daemonize
+# run start-pulseaudio-x11
+run jamesdsp --tray # Launch JamesDSP and keep gui in tray
 run mpd # Music Player Daemon
-run mpDris2 # Mpris support for the Music Player Daemon
+# run mpDris2 # Mpris support for the Music Player Daemon
 #run pnmixer # Audio control tray applet
 run blueman-applet # Bluetooth tray icon
 run numlockx on # enable numlock
