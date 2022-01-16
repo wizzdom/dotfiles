@@ -23,5 +23,5 @@ run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1  # credetial manag
 run xfce4-power-manager # Power manager
 run flameshot # screenshot utility
 #run steam -silent # Launch steam in background
-run syncthing --no-browser # Syncthing - file sync
-run setxkbmap ie -option "caps:swapescape"
+# run syncthing --no-browser # Syncthing - file sync
+# run setxkbmap ie -option "caps:swapescape"
