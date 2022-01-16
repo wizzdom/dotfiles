@@ -17,7 +17,7 @@ set ignorecase
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.config/nvim/undodir
+set undodir=$HOME/.local/share/nvim/undodir
 set undofile
 set incsearch
 set termguicolors
@@ -34,7 +34,7 @@ if exists('g:vscode')
 
 else
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('$HOME/.local/share/nvim/plugged')
 Plug 'mbbill/undotree', 
 Plug 'godlygeek/tabular',
 "Theme
@@ -98,7 +98,7 @@ autocmd FileType markdown inoremap ,f +@fig:
 
 " Vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
-                    \ 'syntax': 'markdown', 'ext': '.md'}]
+                    \ 'syntax': 'markdown', 'ext': '.wiki.md'}]
 " Markdown Preview
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
