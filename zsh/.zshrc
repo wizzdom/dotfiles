@@ -50,7 +50,7 @@ bindkey  "^[[3~"  delete-char
 [ -f "$HOME/.dotfiles/zsh/aliasrc" ] && source "$HOME/.dotfiles/zsh/aliasrc"
 [ -f "$HOME/.dotfiles/zsh/ghcli.zsh" ] && source "$HOME/.dotfiles/zsh/ghcli.zsh"
 
-#neofetch
+eval $(thefuck --alias)
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
