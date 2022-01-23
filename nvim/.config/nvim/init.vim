@@ -49,6 +49,7 @@ Plug 'tpope/vim-commentary',
 "Language Support
 Plug 'baskerville/vim-sxhkdrc',
 Plug 'plasticboy/vim-markdown',
+Plug 'mzlogin/vim-markdown-toc',
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 "Nerdtree
 Plug 'preservim/nerdtree' |
