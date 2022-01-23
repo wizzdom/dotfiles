@@ -24,6 +24,7 @@ ex ()
   fi
 }
 
+alias barrierfixed="QT_QPA_PLATFORMTHEME=gtk2 barrier"
 
 # Pacman aliases
 alias pacman-update='sudo pacman-mirrors --geoip'

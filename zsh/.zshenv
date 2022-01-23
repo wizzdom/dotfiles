@@ -1,7 +1,7 @@
 # zshenv
 
 # XDG paths
-export XDG_RUNTIME_DIR="/tmp/$USER"
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
@@ -14,12 +14,11 @@ export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
-export XDG_RUNTIME_DIR=/run/user/$(id -u)
-
-
-
 # Disable files
 export LESSHISTFILE=-
+
+
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Scaling
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
@@ -37,15 +36,15 @@ export TERM="xterm-256color"
 export BROWSER="firefox"
 export ALTBROWSER="brave"
 export VIDEO="mpv"
-export PLAYER="spotify"
+export PLAYER="ncmpcpp"
 export IMAGE="nomacs"
 export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
-export WM="awesome"
+export WM="i3"
 
 # Path
-export PATH=$PATH:~/.local/bin:~/scripts
+export PATH=$PATH:~/.local/bin:$HOME/scripts
 
 # Values for shader caching for use in gaming.
 export __GL_SHADER_DISK_CACHE=1
@@ -53,6 +52,6 @@ export __GL_SHADER_DISK_CACHE_PATH='/tmp/nvidia-shaders'
 export __GL_THREADED_OPTIMIZATION=1
 
 
-export MANGOHUD=1
+# export MANGOHUD=1
 
 export _microarchitecture=36
