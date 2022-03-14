@@ -68,7 +68,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # open browser
-bindsym $mod+q exec firefox
+bindsym $mod+q exec firedragon
 
 # open GUI File Manager
 bindsym $mod+e exec pcmanfm
@@ -210,6 +210,8 @@ for_window [class="^.*"] border pixel 1
 for_window [window_role="About"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable
+for_window [class="Steam"] floating enable
+for_window [class="scrcpy"] floating enable
 
 
 bindsym $mod+r mode "resize"

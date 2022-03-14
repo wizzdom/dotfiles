@@ -24,8 +24,6 @@ ex ()
   fi
 }
 
-alias barrierfixed="QT_QPA_PLATFORMTHEME=gtk2 barrier"
-
 # Pacman aliases
 alias pacman-update='sudo pacman-mirrors --geoip'
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
@@ -90,6 +88,7 @@ alias mv='mv -i'
 alias vim='nvim'
 alias vi='nvim'
 alias v='nvim'
+alias sxiv='nsxiv'
 
 # cd aliases
 alias C:="cd /mnt/windows"
@@ -114,9 +113,6 @@ alias "apt remove"="sudo apt-fast remove"
 alias "apt purge"="sudo apt-fast purge"
 
 alias sauce="source ~/.zshrc"
-
-# Browsers aliases
-alias vivaldi="/opt/vivaldi/vivaldi"
 
 # youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
