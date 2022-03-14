@@ -14,8 +14,15 @@ export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
-# Disable files
+# Less Pager options
 export LESSHISTFILE=-
+export LESS_TERMCAP_mb=$'\E[1;31m'
+export LESS_TERMCAP_md=$'\E[1;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[1;33m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[1;32m'
 
 
 export QT_QPA_PLATFORMTHEME=qt5ct
@@ -33,7 +40,7 @@ export READER="zathura"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
 export TERM="xterm-256color"
-export BROWSER="firefox"
+export BROWSER="firedragon"
 export ALTBROWSER="brave"
 export VIDEO="mpv"
 export PLAYER="ncmpcpp"
