@@ -52,8 +52,6 @@ bindkey  "^[[3~"  delete-char
 
 eval $(thefuck --alias)
 
-eval "$(/home/wizzdom/.local/opt/anaconda3/bin/conda shell.zsh hook)"
-
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

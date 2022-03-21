@@ -10,7 +10,7 @@ function run {
 # run picom --experimental-backends # compositor
 run nitrogen --restore # wallpaper setter
 run nm-applet --indicator # wifi/network indicator
-run barrierfixed
+run barrier
 # run pulseaudio --daemonize
 # run start-pulseaudio-x11
 run jamesdsp --tray # Launch JamesDSP and keep gui in tray
