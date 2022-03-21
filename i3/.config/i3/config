@@ -59,23 +59,32 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym XF86AudioStop exec --no-startup-id playerstl stop
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
-
 # open browser
 bindsym $mod+q exec firedragon
-
 # open GUI File Manager
 bindsym $mod+e exec pcmanfm
-
+# Open Music player
+bindsym $mod+m exec env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify
+# bindsym $mod+m exec alacritty -e ncmpcpp
 # kill focused window
 bindsym $mod+Shift+c kill
+
+assign [class="Thunderbird"] 10
+assign [class="Betterbird"] 10
+assign [class="Firefox"] 1
+assign [class="Firedragon"] 2
+assign [class="Spotify"] 2
+assign [class="Steam"] 9
+assign [class="discord"] 4
+
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show combi
@@ -187,10 +196,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym $left resize shrink width 10 px or 10 ppt
+        bindsym $down resize grow height 10 px or 10 ppt
+        bindsym $up resize shrink height 10 px or 10 ppt
+        bindsym $right resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -213,6 +222,7 @@ for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="scrcpy"] floating enable
+for_window [class="yad"] floating enable
 
 
 bindsym $mod+r mode "resize"
