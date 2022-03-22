@@ -80,7 +80,8 @@ bindsym $mod+Shift+c kill
 assign [class="Thunderbird"] 10
 assign [class="Betterbird"] 10
 assign [class="Firefox"] 1
-assign [class="Firedragon"] 2
+assign [class="firedragon"] 1
+assign [class="Navigator"] 1
 assign [class="Spotify"] 2
 assign [class="Steam"] 9
 assign [class="discord"] 4
@@ -157,6 +158,20 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Set workspaces to specific screens
+# Syntax: workspace <workspace> output <output1> [output2]…
+workspace 1 output HDMI-0 primary
+workspace 3 output HDMI-0 primary
+workspace 5 output HDMI-0 primary
+workspace 7 output HDMI-0 primary
+workspace 9 output HDMI-0 primary
+
+workspace 2 output DVI-D-0 HDMI-0 primary
+workspace 4 output DVI-D-0 HDMI-0 primary
+workspace 6 output DVI-D-0 HDMI-0 primary
+workspace 8 output DVI-D-0 HDMI-0 primary
+workspace 10 output DVI-D-0 HDMI-0 primary
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -214,13 +229,21 @@ mode "resize" {
 }
 
 # window rules
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
+for_window [class="Navigator"] border none
+for_window [class="firefox"] border none
+for_window [class="firedragon"] border none
+for_window [class="Steam" title="Steam"] border none
+# for_window [floating] border none
+for_window [window_role="pop-up"] floating enable
 
 # floating windows
 for_window [window_role="About"] floating enable
+for_window [class="blueman-manager"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable
-for_window [class="Steam"] floating enable
+# for_window [class="Steam"] floating enable
+for_window [title="Friends List"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="yad"] floating enable
 
