@@ -98,6 +98,8 @@ alias E:="cd /mnt/supasupweme"
 alias gohome="cd ~/"
 alias cd..='cd ..'
 
+alias update-dots="cd $HOME/.dotfiles/ && git pull"
+
 # Yay Aliases
 alias yaya="yay"
 alias aya="yay"
