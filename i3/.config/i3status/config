@@ -1,0 +1,82 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 5
+}
+
+# order += "ipv6"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "run_watch VPNC"
+order += "path_exists VPN"
+order += "battery all"
+order += "disk /home/"
+order += "load"
+order += "memory"
+order += "load"
+order += "tztime local"
+
+wireless _first_ {
+        format_up = "📡: (%quality at %essid) %ip"
+        format_down = "📡: 🚫"
+}
+
+ethernet _first_ {
+        format_up = "🌐: %ip (%speed)"
+        format_down = "🌐: down"
+}
+run_watch VPNC {
+        # file containing the PID of a vpnc process
+        pidfile = "/var/run/vpnc/pid"
+}
+
+path_exists VPN {
+        # path exists when a VPN tunnel launched by nmcli/nm-applet is active
+        path = "/proc/sys/net/ipv4/conf/tun0"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+        format_down = "🚫 🔋"
+        status_chr = "⚡ CHR"
+        status_bat = "🔋 BAT"
+        status_unk = "? UNK"
+        status_full = "☻ FULL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+disk "/home/" {
+        format = "📂: %avail"
+}
+
+load {
+        format = "🖥 %5min"
+}
+
+memory {
+        format = "🍜 :%used , %available"
+        threshold_degraded = "1G"
+        format_degraded = "🍜 < %available"
+}
+
+tztime local {
+        format = "📅 %d-%m-%Y 🕑 %H:%M:%S"
+}
+
+tztime berlin {
+        format = "%Y-%m-%d %H:%M:%S %Z"
+        timezone = "Europe/Berlin"
+}
+
+read_file uptime {
+        path = "/proc/uptime"
+}
