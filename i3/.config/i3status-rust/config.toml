@@ -33,12 +33,12 @@ format = "{average} avg"
 chip = "*-isa-*"
 inputs = ["CPUTIN", "SYSTIN"]
 
-[[block]]
-block = "nvidia_gpu"
-label = "GPU"
-show_memory = false
-show_clocks = false
-interval = 1
+# [[block]]
+# block = "nvidia_gpu"
+# label = "GPU"
+# show_memory = false
+# show_clocks = false
+# interval = 1
 
 [[block]]
 block = "sound"
