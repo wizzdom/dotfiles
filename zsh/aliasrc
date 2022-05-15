@@ -95,8 +95,8 @@ alias C:="cd /mnt/windows"
 alias D:="cd /mnt/storage"
 alias E:="cd /mnt/supasupweme"
 
-alias gohome="cd ~/"
 alias cd..='cd ..'
+alias cd../..='cd ../..'
 
 alias update-dots="cd $HOME/.dotfiles/ && git pull"
 
@@ -117,15 +117,16 @@ alias "apt purge"="sudo apt-fast purge"
 alias sauce="source ~/.zshrc"
 
 # youtube-dl
-alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yt-aac="youtube-dl --extract-audio --audio-format aac "
+alias yt-flac="youtube-dl --extract-audio --audio-format flac "
+alias yt-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yt-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yt-opus="youtube-dl --extract-audio --audio-format opus "
+alias yt-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yt-wav="youtube-dl --extract-audio --audio-format wav "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
-alias yta-flac="youtube-dl --extract-audio --audio-format flac "
-alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
-alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
-alias yta-opus="youtube-dl --extract-audio --audio-format opus "
-alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
-alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+alias ytv-1080="youtube-dl -f bestvideo[ext=mp4][height<=?1080]+bestaudio[ext=m4a]/best "
 
 
 #------------

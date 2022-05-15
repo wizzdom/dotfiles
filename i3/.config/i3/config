@@ -83,12 +83,13 @@ assign [class="Mail"] 10
 assign [class="Firefox"] 1
 assign [class="firedragon"] 1
 assign [class="Navigator"] 1
-assign [class="Spotify"] 2
+assign [class="^Spotify$"] 2
 assign [class="Steam"] 9
 assign [title="Steam"] 9
 assign [class="steam"] 9
 assign [class="steamwebhelper"] 9
 assign [class="discord"] 4
+assign [class="gtkcord4"] 4
 
 
 # start dmenu (a program launcher)
@@ -248,6 +249,7 @@ for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable
 # for_window [class="Steam"] floating enable
 for_window [title="Friends List"] floating enable
+for_window [class="tundra"] floating enable
 for_window [class="scrcpy"] floating enable
 for_window [class="yad"] floating enable
 for_window [class="zoom "] floating enable

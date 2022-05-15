@@ -47,8 +47,8 @@ format = "{output_description} {volume}"
 [[block]]
 block = "music"
 buttons = ["play"]
-interface_name_exclude = [".*kdeconnect.*", "mpd"]
-on_collapsed_click = "LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify"
+interface_name_exclude = [".*kdeconnect.*"]
+on_collapsed_click = "spotify"
 
 [[block]]
 block = "notify"
