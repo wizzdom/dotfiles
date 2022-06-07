@@ -1,9 +1,9 @@
 theme = "dracula"
 icons = "awesome"
 
-[[block]]
-block = "kdeconnect"
-format = "{name} {bat_icon}  {notif_icon}{notif_count}"
+# [[block]]
+# block = "kdeconnect"
+# format = "{name} {bat_icon}  {notif_icon}{notif_count}"
 
 [[block]]
 block = "disk_space"

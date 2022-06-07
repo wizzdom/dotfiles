@@ -236,14 +236,13 @@ mode "resize" {
 # window rules
 for_window [class="^.*"] border pixel 2
 for_window [class="Navigator"] border none
-for_window [class="firefox"] border none
-for_window [class="firedragon"] border none
 for_window [class="Steam" title="Steam"] border none
 # for_window [floating] border none
 for_window [window_role="pop-up"] floating enable
 
 # floating windows
 for_window [window_role="About"] floating enable
+for_window [title="Steam - Self Updater"] floating enable
 for_window [class="blueman-manager"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable
