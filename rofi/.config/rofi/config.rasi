@@ -1,5 +1,5 @@
 configuration {
-    modi: "drun,run,ssh,combi";
+    modi: "drun,run,ssh,combi,emoji";
     show-icons: true;
     icon-theme: "Papirus Dark";
     combi-modi: "drun,run,ssh";

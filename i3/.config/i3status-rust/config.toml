@@ -1,9 +1,9 @@
 theme = "dracula"
 icons = "awesome"
 
-# [[block]]
-# block = "kdeconnect"
-# format = "{name} {bat_icon}  {notif_icon}{notif_count}"
+[[block]]
+block = "kdeconnect"
+format = "{name} {bat_icon}  {notif_icon}{notif_count}"
 
 [[block]]
 block = "disk_space"
@@ -46,8 +46,7 @@ format = "{output_description} {volume}"
 
 [[block]]
 block = "music"
-buttons = ["play"]
-interface_name_exclude = [".*kdeconnect.*"]
+buttons = ["prev", "play", "next"]
 on_collapsed_click = "spotify"
 
 [[block]]
