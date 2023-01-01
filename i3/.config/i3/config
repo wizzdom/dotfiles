@@ -68,7 +68,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 # open browser
-bindsym $mod+q exec firedragon
+bindsym $mod+q exec firefox
 # open GUI File Manager
 bindsym $mod+e exec pcmanfm
 # Open Music player
@@ -78,17 +78,23 @@ bindsym $mod+m exec env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify
 bindsym $mod+Shift+c kill
 
 assign [class="Thunderbird"] 10
+assign [class="thunderbird"] 10
 assign [class="Betterbird"] 10
 assign [class="Mail"] 10
 assign [class="Firefox"] 1
 assign [class="firedragon"] 1
 assign [class="Navigator"] 1
-assign [class="^Spotify$"] 2
+assign [class="Spotify"] 2
+assign [title="Spotify"] 2
+assign [class="spotify"] 2
+assign [title="spotify"] 2
 assign [class="Steam"] 9
 assign [title="Steam"] 9
 assign [class="steam"] 9
 assign [class="steamwebhelper"] 9
 assign [class="discord"] 4
+assign [class="element"] 6
+assign [class="Signal"] 6
 assign [class="gtkcord4"] 4
 
 
@@ -134,7 +140,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 # bindsym $mod+e layout toggle split
 
@@ -165,17 +171,17 @@ set $ws10 "10"
 
 # Set workspaces to specific screens
 # Syntax: workspace <workspace> output <output1> [output2]…
-workspace 1 output HDMI-0 primary
-workspace 3 output HDMI-0 primary
-workspace 5 output HDMI-0 primary
-workspace 7 output HDMI-0 primary
-workspace 9 output HDMI-0 primary
+workspace 1 output primary
+workspace 3 output primary
+workspace 5 output primary
+workspace 7 output primary
+workspace 9 output primary
 
-workspace 2 output DVI-D-0 HDMI-0 primary
-workspace 4 output DVI-D-0 HDMI-0 primary
-workspace 6 output DVI-D-0 HDMI-0 primary
-workspace 8 output DVI-D-0 HDMI-0 primary
-workspace 10 output DVI-D-0 HDMI-0 primary
+workspace 2 output DisplayPort-1 primary
+workspace 4 output DisplayPort-1 primary
+workspace 6 output DisplayPort-1 primary
+workspace 8 output DisplayPort-1 primary
+workspace 10 output DisplayPort-1 primary
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -243,6 +249,7 @@ for_window [window_role="pop-up"] floating enable
 # floating windows
 for_window [window_role="About"] floating enable
 for_window [title="Steam - Self Updater"] floating enable
+for_window [title="Starting Unity..."] floating enable
 for_window [class="blueman-manager"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="jamesdsp"] floating enable

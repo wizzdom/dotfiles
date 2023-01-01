@@ -3,6 +3,7 @@
 # XDG paths
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
+export XDG_DATA_DIRS=XDG_DATA_DIRS:/var/lib/flatpak/exports/share:$XDG_DATA_HOME/flatpak/exports/share
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
 export XDG_DESKTOP_DIR="$HOME/Desktop"
@@ -10,7 +11,8 @@ export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 export XDG_TEMPLATES_DIR="$HOME/Templates"
 export XDG_PUBLICSHARE_DIR="$HOME/Public"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
-export XDG_MUSIC_DIR="$HOME/Music"
+# export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_MUSIC_DIR="/mnt/storage/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
@@ -51,7 +53,7 @@ export PAGER="less"
 export WM="i3"
 
 # Path
-export PATH=$PATH:~/.local/bin:$HOME/scripts
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts
 
 # Values for shader caching for use in gaming.
 export __GL_SHADER_DISK_CACHE=1

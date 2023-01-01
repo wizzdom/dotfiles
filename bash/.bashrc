@@ -137,3 +137,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+EINSTEIN_USERNAME='connord4'
+EINSTEIN_USERNAME='connord4'
+export EINSTEIN_USERNAME='connord4'
+export EINSTEIN_USERNAME='connord4'
