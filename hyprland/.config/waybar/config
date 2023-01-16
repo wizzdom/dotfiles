@@ -10,18 +10,21 @@
     "modules-right": ["custom/media", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
      "wlr/workspaces": {
-         "disable-scroll": true,
+         "disable-scroll": false,
+         "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
+         "on-click": "activate",
          "all-outputs": true,
-         "format": "{name}: {icon}",
+         "format": "{name}",
          "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "urgent": "",
-             "focused": "",
-             "default": ""
+             /* "1": "", */
+             /* "2": "", */
+             /* "3": "", */
+             /* "4": "", */
+             /* "5": "", */
+             /* "urgent": "", */
+             /* "focused": "", */
+             /* "default": "" */
          }
      },
     "keyboard-state": {
@@ -77,7 +80,7 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 21,
         "spacing": 10
     },
     "clock": {

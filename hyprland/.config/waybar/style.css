@@ -65,7 +65,7 @@ window#waybar {
     margin-top:0px;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     border-color: #81a1c1;
 }
 
