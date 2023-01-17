@@ -1,8 +1,8 @@
 " vimrc by WIZZDOM
 
 
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=3 softtabstop=3
+set shiftwidth=3
 set expandtab
 set smartindent
 set exrc
