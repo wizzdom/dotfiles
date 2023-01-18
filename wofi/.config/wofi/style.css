@@ -1,6 +1,6 @@
 /* Kattunge Wofi v2.1 // Aug 2022 */
 
-@define-color background rgba(0, 0, 0, 0.60);
+@define-color background rgba(0, 0, 0, 0.80);
 @define-color foreground rgb(220, 220, 220);
 @define-color outline rgba(255, 255, 255, 0.15);
 @define-color accent rgb(226, 204, 219);
