@@ -27,6 +27,9 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[1;32m'
 
 
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Scaling
@@ -42,23 +45,25 @@ export READER="zathura"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
 export TERM="xterm-256color"
-export BROWSER="firedragon"
+export BROWSER="firefox"
 export ALTBROWSER="brave"
 export VIDEO="mpv"
 export PLAYER="ncmpcpp"
-export IMAGE="nomacs"
+export IMAGE="nsxiv"
 export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
-export WM="i3"
+export WM="Hyprland"
 
 # Path
 export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts
 
+export EINSTEIN_USERNAME='connord4'
+
 # Values for shader caching for use in gaming.
-# export __GL_SHADER_DISK_CACHE=1
+export __GL_SHADER_DISK_CACHE=1
 # export __GL_SHADER_DISK_CACHE_PATH='/tmp/nvidia-shaders'
-# export __GL_THREADED_OPTIMIZATION=1
+export __GL_THREADED_OPTIMIZATION=1
 
 export LF_ICONS="\
 di=:\
