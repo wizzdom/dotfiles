@@ -5,11 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Dependencies needed for this config
-# zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
-# autojump - jump to directories with j or jc for child or jo to open in file manager
-# zsh-autosuggestions - Suggestions based on your history
-
 # Initial Setup
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 # echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
@@ -25,6 +20,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zshhistory
 setopt appendhistory
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -32,9 +28,6 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)               # Include hidden files.
-#eval "$(bw completion --shell zsh); compdef _bw bw;" # Bitwarden cli completion
-export USE_CCACHE=1
-export CCACHE_EXEC=/usr/bin/ccache
 
 # Custom ZSH Binds
 bindkey '^ ' autosuggest-accept
@@ -43,11 +36,7 @@ bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 
 # Load aliases and shortcuts if existent.
-# [ -f "$HOME/zsh/aliasrc" ] && source "$HOME/zsh/aliasrc"
-# [ -f "$HOME/zsh/ghcli.zsh" ] && source "$HOME/zsh/ghcli.zsh"
-# [ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
-# [ -f "$HOME/.zsh/ghcli.zsh" ] && source "$HOME/.zsh/ghcli.zsh"
-[ -f "$HOME/.dotfiles/zsh/aliasrc" ] && source "$HOME/.dotfiles/zsh/aliasrc"
+[ -f "$HOME/.dotfiles/zsh/aliases.zsh" ] && source "$HOME/.dotfiles/zsh/aliases.zsh"
 [ -f "$HOME/.dotfiles/zsh/ghcli.zsh" ] && source "$HOME/.dotfiles/zsh/ghcli.zsh"
 
 eval $(thefuck --alias)
@@ -65,5 +54,4 @@ source /usr/share/autojump/autojump.zsh 2>/dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
-export EINSTEIN_USERNAME='connord4'
-export EINSTEIN_USERNAME='connord4'
+
