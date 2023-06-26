@@ -102,6 +102,16 @@ else
    alias v='vi'
 fi
 
+# vim aliases
+
+if hash btop 2>/dev/null; then
+   alias htop='btop'
+   alias top='btop'
+elif [hash htop]; then
+   alias top='htop'
+else
+   alias htop='top'
+fi
 
 # cd aliases
 alias cd..='cd ..'
