@@ -56,6 +56,7 @@ Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'andweeb/presence.nvim',
 call plug#end()
 
 colorscheme codedark
@@ -104,7 +105,7 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
-let g:mkdp_browser = 'firedragon'
+let g:mkdp_browser = 'firefox'
 let g:mkdp_preview_options = {
     \ 'mkit': {},
     \ 'katex': {},
