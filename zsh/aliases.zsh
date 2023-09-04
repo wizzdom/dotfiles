@@ -102,6 +102,8 @@ else
    alias v='vi'
 fi
 
+alias hyprconf='$EDITOR $HOME/.config/hypr/hyprland.conf'
+
 # vim aliases
 
 if hash btop 2>/dev/null; then

@@ -11,6 +11,7 @@
     "modules-right": ["custom/media", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
      "wlr/workspaces": {
+         "sort-by-number": true,
          "disable-scroll": false,
          "on-scroll-up": "hyprctl dispatch workspace e+1",
          "on-scroll-down": "hyprctl dispatch workspace e-1",

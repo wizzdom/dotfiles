@@ -1,5 +1,5 @@
 # Kattunge Wofi Config // Aug 2022
-monitor=HDMI-A-1
+monitor=DP-2
 show=drun,run
 columns=2
 width=35%
