@@ -1,5 +1,7 @@
+[theme]
 theme = "dracula"
-icons = "awesome"
+[icons]
+icons = "awesome6"
 
 [[block]]
 block = "kdeconnect"
