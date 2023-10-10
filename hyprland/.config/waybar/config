@@ -30,7 +30,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "<span color='#bf616a'> </span>{:%H:%M %a %d %b}",
+        "format": "<span color='#bf616a'>  </span>{:%H:%M %a %d %b}",
         "format-alt": "<span color='#bf616a'> </span>{:%H:%M}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     },
@@ -54,7 +54,7 @@
         "on-click": "",
     },
     "network": {
-        "format-wifi": "直{essid} {signalStrength}%",
+        "format-wifi": "直 {essid} {signalStrength}%",
         "format-ethernet": " {ipaddr}",
         "format-disconnected": "睊",
         "tooltip-format": "{ifname} via {gwaddr} ",
