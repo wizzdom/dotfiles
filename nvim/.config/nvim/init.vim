@@ -1,8 +1,8 @@
 " vimrc by WIZZDOM
 
 
-set tabstop=3 softtabstop=3
-set shiftwidth=3
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
 set exrc
@@ -56,6 +56,8 @@ Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jvirtanen/vim-hcl'
+Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
 Plug 'andweeb/presence.nvim',
 call plug#end()
 
