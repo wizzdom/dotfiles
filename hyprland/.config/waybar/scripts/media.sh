@@ -12,10 +12,14 @@ while true; do
 			echo ""
 		fi
 	else
+        player_info="$(playerctl metadata artist) - $(playerctl metadata title)"
+        if [ ${#player_info} -gt 40 ]; then
+            player_info="$(playerctl metadata title | cut -c1-40)"
+        fi
 		if [ "$player_status" = "Playing" ]; then
-			echo "<span color='#1db954'></span> $(playerctl metadata artist) - $(playerctl metadata title)"
+            echo " ⏵ $player_info"
 		elif [ "$player_status" = "Paused" ]; then
-			echo "<span color='#1db954'></span>  $(playerctl metadata artist) - $(playerctl metadata title)"
+			echo " ⏸ $player_info"
     else
 			echo ""
 		fi
