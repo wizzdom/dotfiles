@@ -1,7 +1,10 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "FiraCode Nerd Font";
-  font-size: 17px;
+  font-family: "FiraCode Nerd Font Mono Med";
+  font-size: 16px;
+}
+window.eDP-1 * {
+font-size: 17px;
 }
 
 window#waybar {
@@ -78,7 +81,7 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  padding: 0 10px;
+  padding: 1px 10px 1px;
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 9.5px;
