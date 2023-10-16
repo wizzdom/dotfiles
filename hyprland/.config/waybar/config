@@ -11,6 +11,9 @@
     "modules-right": ["backlight", "pulseaudio", "network", "battery", "tray", "clock", "custom/power-menu"],
     "hyprland/workspaces": {
       "format": "{icon}",
+      "disable-scroll": false,
+      "on-scroll-up": "hyprctl dispatch workspace e+1",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
       "on-click": "activate",
       "format-icons": {
         "1": "",
@@ -19,7 +22,7 @@
         "4": "",
         "5": "",
         "urgent": "",
-        "active": "",
+        "active": "",
         "default": ""
       }
     },
