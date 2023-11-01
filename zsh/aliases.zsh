@@ -109,7 +109,7 @@ alias hyprconf='$EDITOR $HOME/.config/hypr/hyprland.conf'
 if hash btop 2>/dev/null; then
    alias htop='btop'
    alias top='btop'
-elif [hash htop]; then
+elif hash htop; then
    alias top='htop'
 else
    alias htop='top'
