@@ -67,6 +67,7 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
+        "ignored-sinks": "jamesdsp_sink",
         "format-bluetooth": "  {volume}%",
         "format-bluetooth-muted": " ",
         "format-muted": "婢",
