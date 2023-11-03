@@ -94,7 +94,7 @@ if hash nvim 2>/dev/null; then
    alias vim='nvim'
    alias vi='nvim'
    alias v='nvim'
-elif [hash vim]; then
+elif hash vim; then
    alias vi='vim'
    alias v='vim'
 else
