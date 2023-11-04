@@ -177,5 +177,12 @@ gitpushall() {
     git commit -m "$*"
     git push
 }
-alias gpa=gitpush
+alias gpa=gitpushall
 alias gstat='git status'
+
+alias gpr="git push origin HEAD:refs/for/main"
+alias gpr_master="git push origin HEAD:refs/for/master"
+alias gpr_main="git push origin HEAD:refs/for/main"
+alias gpr_wip="git push origin HEAD:refs/for/main%wip"
+alias gls="git log --show-signature"
+alias sminit="git submodule update --init --recursive"

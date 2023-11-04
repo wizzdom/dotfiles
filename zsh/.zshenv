@@ -1,5 +1,8 @@
 # zshenv
 
+# ZSH directories
+export ZDOTDIR=$HOME/.config/zsh
+
 # XDG paths
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
