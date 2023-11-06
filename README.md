@@ -1,48 +1,30 @@
-# dotfiles
+# dotfiles :computer:
 
-All of my dotfiles in one place for convenience...
+All of my dotfiles in one place for convenience and easy setup :sunglasses:
 
 ## Setup
-### Clone the repo
+### Install yadm
 
 ```bash
-cd $HOME
-git clone --recursive https://github.com/wizzdom/dotfiles $HOME/.dotfiles
+# Arch Linux
+sudo pacman -S yadm
+
+# Other
+curl -fLo $HOME/.local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x $HOME/.local/bin/yadm
 ```
 
-### Setup Symlinks
+### Clone dotfiles
 
-Requires GNU Stow.
 ```bash
-cd $HOME/.dotfiles
-# to add all configs:
-stow */
-
-# or to add specific configs (e.g. awesome):
-stow awesome
+# Clone with https
+yadm clone https://github.com/wizzdom/dotfiles.git
+# or
+# Clone with ssh
+yadm clone git@github.com:wizzdom/dotfiles.git
 ```
 ---
 
-# ZSH
-
-My ZSH Config initially forked from [ChrisTitusTech](https://github.com/ChrisTitusTech/zsh), but now is more customised to my workflow.
-
-## Standalone Setup
-Use the commands below for manual standalone installation.
-```
-cd $HOME
-mkdir -p $HOME/zsh
-curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/.zshrc > $HOME/zsh/.zshrc
-curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/aliasrc > $HOME/zsh/aliasrc
-curl -l https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zprofile > $HOME/zsh/.zprofile
-curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.zshenv > $HOME/zsh/zshenv
-curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/.p10k.zsh > $HOME/zsh/.p10k.zsh
-curl -L https://raw.githubusercontent.com/wizzdom/dotfiles/master/zsh/ghcli.zsh > $HOME/zsh/ghcli.zsh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/zsh/powerlevel10k
-ln -s -f ~/zsh/.zshrc ~/.zshrc
-ln -s -f ~/zsh/.p10k.zsh ~/.p10k.zsh
-touch "~/.cache/zshhistory"
-```
+## ZSH
 
 ### Get Dependencies
 
@@ -53,13 +35,13 @@ touch "~/.cache/zshhistory"
 
 ### Arch linux (paru)
 
-```
+```bash
 paru -S --needed zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 ```
 
 ### Ubuntu/Debian
 
-```
+```bash
 sudo apt install zsh zsh-syntax-highlighting autojump zsh-autosuggestions
 ```
 
