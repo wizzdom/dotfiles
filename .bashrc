@@ -122,22 +122,5 @@ alias gpa=gitpush
 
 # Git status
 alias gstat='git status'
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/wizzdom/.local/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/wizzdom/.local/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/wizzdom/.local/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/wizzdom/.local/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
-EINSTEIN_USERNAME='connord4'
-EINSTEIN_USERNAME='connord4'
-export EINSTEIN_USERNAME='connord4'
 export EINSTEIN_USERNAME='connord4'
