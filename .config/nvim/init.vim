@@ -108,6 +108,11 @@ autocmd FileType markdown inoremap ,u +<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,o 1.<Space><CR><++><Esc>1k<S-a>
 autocmd FileType markdown inoremap ,f +@fig:
 
+" in makefiles, don't expand tabs to spaces, since actual tab characters are
+" needed, and have indentation at 8 chars to be sure that all indents are tabs
+" (despite the mappings later):
+autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
+
 " Vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                     \ 'syntax': 'markdown', 'ext': '.wiki.md'}]
