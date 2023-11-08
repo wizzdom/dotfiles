@@ -18,6 +18,7 @@ audio/mpeg=mpv.desktop
 application/pdf=org.pwmt.zathura.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-S04AW0.desktop
 x-scheme-handler/lbry=lbry.desktop
+application/zip=peazip.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-B9XWU0.desktop;
@@ -39,3 +40,4 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoff
 text/csv=notepadqq.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-S04AW0.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
+application/zip=peazip.desktop;
