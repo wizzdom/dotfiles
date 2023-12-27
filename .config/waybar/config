@@ -67,7 +67,7 @@
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "ignored-sinks": "jamesdsp_sink",
+        "ignored-sinks": ["JamesDSP Sink"],
         "format-bluetooth": "  {volume}%",
         "format-bluetooth-muted": " ",
         "format-muted": "婢",
@@ -115,7 +115,7 @@
     "custom/power-menu": {
         "format": " <span color='#6a92d7'>⏻ </span>",
         "on-click": "wlogout",
-    }, 
+    },
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "wofi -show drun, run",
