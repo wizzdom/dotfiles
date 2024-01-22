@@ -22,6 +22,42 @@ yadm clone https://github.com/wizzdom/dotfiles.git
 # Clone with ssh
 yadm clone git@github.com:wizzdom/dotfiles.git
 ```
+
+### Required fonts
+
+These fonts are required for various parts of the dotfiles *(e.g. statusbar icons)* to work properly.
+
+```bash
+paru -S --needed adobe-source-code-pro-fonts \
+adobe-source-han-sans-cn-fonts \
+adobe-source-han-sans-hk-fonts \
+adobe-source-han-sans-jp-fonts \
+adobe-source-han-sans-kr-fonts \
+adobe-source-han-sans-otc-fonts \
+adobe-source-han-sans-tw-fonts \
+awesome-terminal-fonts \
+cantarell-fonts \
+consolas-font \
+gnu-free-fonts \
+gsfonts \
+inter-font \
+libfontenc \
+libxfont2 \
+noto-fonts \
+noto-fonts-sc \
+otf-font-awesome \
+powerline-fonts \
+python-fonttools \
+ttf-font-awesome \
+ttf-meslo-nerd-font-powerlevel10k \
+ttf-ms-fonts \
+ttf-nerd-fonts-symbols \
+ttf-nerd-fonts-symbols-common \
+ttf-ubuntu-font-family \
+xorg-font-util \
+xorg-fonts-encodings \
+xorg-fonts-type1
+```
 ---
 
 ## ZSH
