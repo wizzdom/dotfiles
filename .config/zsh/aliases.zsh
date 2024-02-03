@@ -179,6 +179,19 @@ gitpushall() {
 }
 alias gpa=gitpushall
 alias gstat='git status'
+alias gadd='git add'
+alias gcommit='git commit -m'
+alias gpush='git push'
+alias gdiff='git diff'
+alias ga='git add'
+alias gs='git status'
+alias gc='git commit -m'
+alias gd='git diff'
+alias gp='git push'
+alias gpull='git pull'
+alias glog='git log'
+alias gco='git checkout'
+alias gcob='git checkout -b'
 
 alias gpr="git push origin HEAD:refs/for/main"
 alias gpr_master="git push origin HEAD:refs/for/master"
@@ -186,3 +199,16 @@ alias gpr_main="git push origin HEAD:refs/for/main"
 alias gpr_wip="git push origin HEAD:refs/for/main%wip"
 alias gls="git log --show-signature"
 alias sminit="git submodule update --init --recursive"
+
+
+#------------
+# YADM ALIASES
+#------------
+
+alias ys='yadm status'
+alias ya='yadm add'
+alias yc='yadm commit -m'
+alias yd='yadm diff'
+alias yp='yadm push'
+alias ypull='yadm pull'
+alias ylog='yadm log'
