@@ -34,6 +34,9 @@ bindkey  "^[[3~"  delete-char
 # Load aliases and shortcuts if existent.
 [ -f "$ZDOTDIR/aliases.zsh" ] && source "$ZDOTDIR/aliases.zsh"
 [ -f "$ZDOTDIR/ghcli.zsh" ] && source "$ZDOTDIR/ghcli.zsh"
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/nomad nomad
+complete -C /usr/bin/consul consul
 
 # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
@@ -45,3 +48,6 @@ source /usr/share/autojump/autojump.zsh 2>/dev/null
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 
+
+
+complete -o nospace -C /usr/bin/consul consul
