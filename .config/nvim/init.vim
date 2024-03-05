@@ -25,7 +25,7 @@ set scrolloff=8 " number of lines to keep above and below cursor
 set signcolumn=yes " always show sign column
 set cmdheight=1 " command line height
 set noshowmode " no show mode
-set clipboard+=unnamedplus " copy to system clipboard
+set clipboard
 set mouse=a " enable mouse
 syntax on " syntax highlighting
 filetype plugin on " filetype plugins
@@ -40,7 +40,7 @@ Plug 'godlygeek/tabular', "Aligning text
 "Theme
 Plug 'tomasiser/vim-code-dark', "vscode theme for vim
 Plug 'itchyny/lightline.vim', "bottom bar
-Plug 'chrisbra/Colorizer', "colorize hex codes
+Plug 'norcalli/nvim-colorizer.lua', "colorizer
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "FuzzyFinder
 Plug 'vimwiki/vimwiki', "Vimwiki
