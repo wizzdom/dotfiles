@@ -124,3 +124,7 @@ alias gpa=gitpush
 alias gstat='git status'
 
 export EINSTEIN_USERNAME='connord4'
+
+complete -C /usr/bin/nomad nomad
+
+complete -C /usr/bin/consul consul
