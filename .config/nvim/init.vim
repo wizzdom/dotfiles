@@ -51,6 +51,7 @@ Plug 'baskerville/vim-sxhkdrc', "SXHKD Support
 Plug 'plasticboy/vim-markdown', "Markdown Support
 Plug 'mzlogin/vim-markdown-toc', "Markdown Table of Contents
 Plug 'jvirtanen/vim-hcl', "Hashicorp Configuration Language Support
+Plug 'adimit/prolog.vim', "Prolog Support
 Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' } "Ansible Support
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  } "Markdown Preview
 "Nerdtree
