@@ -30,6 +30,7 @@ x-scheme-handler/webcal=userapp-Thunderbird-J4LAK2.desktop
 text/calendar=userapp-Thunderbird-J4LAK2.desktop
 application/x-extension-ics=userapp-Thunderbird-J4LAK2.desktop
 x-scheme-handler/webcals=userapp-Thunderbird-J4LAK2.desktop
+application/rtf=cxmenu-cxoffice-4d4250fd-138c-41c7-930f-80be5f0b6067-3ii0rqp-Word.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=userapp-Thunderbird-B9XWU0.desktop;userapp-Thunderbird-D5YAK2.desktop;
@@ -53,10 +54,7 @@ x-scheme-handler/tg=userapp-Telegram Desktop-S04AW0.desktop;org.telegram.desktop
 image/jpeg=firefox.desktop;org.nomacs.ImageLounge.desktop;nsxiv.desktop;
 application/zip=peazip.desktop;org.gnome.FileRoller.desktop;
 application/pgp-signature=nvim.desktop;
-application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=cxmenu-cxoffice-4d4250fd-138c-41c7-930f-80be5f0b6067-3ii0rqp-PowerPoint.desktop;libreoffice-impress.desktop;
 text/markdown=nvim.desktop;
 image/png=gimp.desktop;nsxiv.desktop;
 video/mp4=mpv.desktop;
-x-scheme-handler/mid=userapp-Thunderbird-D5YAK2.desktop;
-x-scheme-handler/webcal=userapp-Thunderbird-J4LAK2.desktop;
-x-scheme-handler/webcals=userapp-Thunderbird-J4LAK2.desktop;
