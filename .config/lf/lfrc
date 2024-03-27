@@ -1,6 +1,6 @@
 # Basic Settings
-set previewer lfpreviewer
-set cleaner lfcleaner
+set cleaner ~/.config/lf/kitty_clean
+set previewer ~/.config/lf/kitty_preview
 set preview
 
 set shellopts '-eu'
