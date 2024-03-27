@@ -59,7 +59,7 @@ export PAGER="less"
 export WM="Hyprland"
 
 # Path
-export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts:$HOME/.spicetify
 
 export EINSTEIN_USERNAME='connord4'
 
