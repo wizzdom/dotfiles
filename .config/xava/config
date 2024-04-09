@@ -284,9 +284,9 @@ background_opacity = 0.0
 # defined in hex or remain commented out.
 # To enable gradients, just change gradient_count to the number of colors you
 # have specified (0 = disabled)
-gradient_count = 100
-gradient_color_1 = '#2990f0'
-gradient_color_2 = '#ea4aff'
+#gradient_count = 100
+#gradient_color_1 = '#2990f0'
+#gradient_color_2 = '#ea4aff'
 
 
 [filter]
