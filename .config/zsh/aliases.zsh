@@ -29,14 +29,15 @@ alias pacman-update='sudo pacman-mirrors --geoip'
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
 alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
 
-# exa instead of ls
+# eza instead of ls
 [ -f "$HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme" ] && source "$HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme"
 if hash exa 2>/dev/null; then
-   alias ls='exa -a --icons --color=always --group-directories-first' # my preferred listing
-   alias la='exa -al --icons --color=always --group-directories-first'  # all files and dirs
-   alias ll='exa -l --icons --color=always --group-directories-first'  # long format
-   alias lt='exa -aT --icons --color=always --group-directories-first' # tree listing
-   alias l.='exa -a --icons | egrep "^\."'
+   alias l='eza --color=always --group-directories-first'
+   alias ls='eza -a --icons --color=always --group-directories-first' # my preferred listing
+   alias la='eza -al --icons --color=always --group-directories-first'  # all files and dirs
+   alias ll='eza -l --icons --color=always --group-directories-first'  # long format
+   alias lt='eza -aT --icons --color=always --group-directories-first' # tree listing
+   alias l.='eza -a --icons | egrep "^\."'
 else
    alias l='ls -lFh --color=auto'     #size,show type,human readable
    alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
@@ -86,6 +87,9 @@ alias unexport='unset'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias mkdir='mkdir -p'
+alias ping='ping -c 5'
+alias ssh='kitten ssh'
 alias sxiv='nsxiv'
 
 # vim aliases
@@ -187,7 +191,8 @@ alias ga='git add'
 alias gs='git status'
 alias gc='git commit -m'
 alias gd='git diff'
-alias gp='git push'
+alias gp='git pull'
+alias gpush='git push'
 alias gpull='git pull'
 alias glog='git log'
 alias gco='git checkout'
@@ -209,6 +214,7 @@ alias ys='yadm status'
 alias ya='yadm add'
 alias yc='yadm commit -m'
 alias yd='yadm diff'
-alias yp='yadm push'
+alias yp='yadm pull'
 alias ypull='yadm pull'
+alias ypush='yadm push'
 alias ylog='yadm log'
