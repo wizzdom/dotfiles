@@ -106,7 +106,7 @@ else
    alias v='vi'
 fi
 
-alias hyprconf='$EDITOR $HOME/.config/hypr/hyprland.conf'
+alias hyprconf='cd $XDG_CONFIG_HOME/hypr && $EDITOR hyprland.conf'
 
 # vim aliases
 
