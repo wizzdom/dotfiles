@@ -29,8 +29,7 @@ alias pacman-update='sudo pacman-mirrors --geoip'
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
 alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
 
-# eza instead of ls
-[ -f "$HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme" ] && source "$HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme"
+# Use eza instead of ls, if available
 if hash exa 2>/dev/null; then
    alias l='eza --color=always --group-directories-first'
    alias ls='eza -a --icons --color=always --group-directories-first' # my preferred listing
@@ -107,6 +106,7 @@ else
 fi
 
 alias hyprconf='cd $XDG_CONFIG_HOME/hypr && $EDITOR hyprland.conf'
+alias nvconf='cd $XDG_CONFIG_HOME/nvim && $EDITOR init.lua'
 
 # vim aliases
 
