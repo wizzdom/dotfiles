@@ -742,25 +742,10 @@ require("lazy").setup({
 	--
 	require("kickstart.plugins.debug"),
 	require("kickstart.plugins.indent_line"),
+	require("kickstart.plugins.autopairs"),
+	require("kickstart.plugins.gitsigns"),
+	require("kickstart.plugins.neo-tree"),
 	require("kickstart.plugins.lint"),
-
-	{
-		"nvim-tree/nvim-tree.lua", -- File tree, like nerdtree
-		dependencies = {
-			{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
-		},
-		config = function()
-			require("nvim-tree").setup({
-				sort = {
-					sorter = "case_sensitive",
-				},
-				renderer = {
-					group_empty = true,
-				},
-			})
-			vim.keymap.set("n", "<C-o>", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle File Tree (NvimTree)" })
-		end,
-	},
 
 	{
 		"andweeb/presence.nvim", --discord rich presence for Neovim
@@ -921,7 +906,6 @@ require("lazy").setup({
 			end,
 		},
 	},
-
 	-- { import = 'custom.plugins' },
 }, {
 	ui = {
