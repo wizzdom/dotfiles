@@ -55,6 +55,7 @@ export IMAGE="nsxiv"
 export COLORTERM="truecolor"
 export OPENER="xdg-open"
 export PAGER="less"
+export MANPAGER='nvim +Man!'
 export WM="Hyprland"
 
 # Path
