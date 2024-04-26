@@ -760,7 +760,7 @@ require("lazy").setup({
 				-- General options
 				auto_update = true, -- Update activity based on autocmd events (if `false`, map or manually execute `:lua package.loaded.presence:update()`)
 				neovim_image_text = "The One True Text Editor", -- Text displayed when hovered over the Neovim image
-				main_image = "neovim", -- Main image display (either "neovim" or "file")
+				main_image = "file", -- Main image display (either "neovim" or "file")
 				client_id = "793271441293967371", -- Use your own Discord application client id (not recommended)
 				log_level = nil, -- Log messages at or above this level (one of the following: "debug", "info", "warn", "error")
 				debounce_timeout = 10, -- Number of seconds to debounce events (or calls to `:lua package.loaded.presence:update(<filename>, true)`)
@@ -1215,7 +1215,7 @@ require("lazy").setup({
 			vim.keymap.set("i", "<tab>", "<cmd>AutolistTab<cr>")
 			vim.keymap.set("i", "<s-tab>", "<cmd>AutolistShiftTab<cr>")
 			-- vim.keymap.set("i", "<c-t>", "<c-t><cmd>AutolistRecalculate<cr>") -- an example of using <c-t> to indent
-			vim.keymap.set("i", "<CR>", "<CR><cmd>AutolistNewBullet<cr>")
+			vim.keymap.set("i", "<CR>", "<CR><Esc><cmd>AutolistNewBullet<cr>i")
 			vim.keymap.set("n", "o", "o<cmd>AutolistNewBullet<cr>")
 			vim.keymap.set("n", "O", "O<cmd>AutolistNewBulletBefore<cr>")
 			vim.keymap.set("n", "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>")
@@ -1234,6 +1234,49 @@ require("lazy").setup({
 			vim.keymap.set("n", "<<", "<<<cmd>AutolistRecalculate<cr>")
 			vim.keymap.set("n", "dd", "dd<cmd>AutolistRecalculate<cr>")
 			vim.keymap.set("v", "d", "d<cmd>AutolistRecalculate<cr>")
+		end,
+	},
+
+	{
+		"vhyrro/luarocks.nvim",
+		priority = 1001, -- this plugin needs to run before anything else
+		opts = {
+			rocks = { "magick" },
+		},
+	},
+	{
+		"3rd/image.nvim",
+		dependencies = { "luarocks.nvim" },
+		config = function()
+			-- default config
+			require("image").setup({
+				backend = "kitty",
+				integrations = {
+					markdown = {
+						enabled = true,
+						clear_in_insert_mode = false,
+						download_remote_images = true,
+						only_render_image_at_cursor = false,
+						filetypes = { "markdown", "vimwiki" }, -- markdown extensions (ie. quarto) can go here
+					},
+					neorg = {
+						enabled = true,
+						clear_in_insert_mode = false,
+						download_remote_images = true,
+						only_render_image_at_cursor = false,
+						filetypes = { "norg" },
+					},
+				},
+				max_width = nil,
+				max_height = nil,
+				max_width_window_percentage = nil,
+				max_height_window_percentage = 50,
+				window_overlap_clear_enabled = false, -- toggles images when windows are overlapped
+				window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
+				editor_only_render_when_focused = false, -- auto show/hide images when the editor gains/looses focus
+				tmux_show_only_in_active_window = false, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
+				hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp" }, -- render image files as images when opened
+			})
 		end,
 	},
 	-- { import = 'custom.plugins' },
