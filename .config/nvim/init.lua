@@ -49,9 +49,6 @@ vim.opt.mouse = "a"
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 
--- enable conceal
-vim.opt.conceallevel = 2
-
 -- Sync clipboard between OS and Neovim.
 -- vim.opt.clipboard = "unnamedplus"
 
@@ -180,6 +177,27 @@ autocmd("BufWritePre", {
 
 vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
+
+-- Hyprlang LSP
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "*.hl", "hypr*.conf" },
+	callback = function(event)
+		print(string.format("starting hyprls for %s", vim.inspect(event)))
+		vim.lsp.start({
+			name = "hyprlang",
+			cmd = { "hyprls" },
+			root_dir = vim.fn.getcwd(),
+		})
+	end,
+})
+
+-- enable conceal for markdown files
+autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "*.md", "*.markdown" },
+	callback = function()
+		vim.opt.conceallevel = 2
+	end,
 })
 
 -- [[ Install `lazy.nvim` plugin manager ]]
