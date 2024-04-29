@@ -57,11 +57,11 @@
         "on-click": "",
     },
     "network": {
-        "format-wifi": "直 {essid} {signalStrength}%",
+        "format-wifi": "󰖩 {essid} {signalStrength}%",
         "format-ethernet": " {ipaddr}",
         "format-disconnected": "睊",
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "on-click": "alacritty -e nmtui",
+        "on-click": "nm-connection-editor",
         "format-disconnected": "Disconnected  ",
     },
 
@@ -117,7 +117,9 @@
         "on-click": "wlogout",
     },
     "custom/launcher": {
-        "format": " <span color='#6a92d7'> </span>",
+        "format": " <span color='#6a92d7'> </span>",
         "on-click": "wofi -show drun, run",
     },
 }
+
+# vim: ft=jsonc

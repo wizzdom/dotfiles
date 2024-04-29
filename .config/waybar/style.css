@@ -3,12 +3,22 @@
   font-family: "FiraCode Nerd Font Mono Med";
   font-size: 16px;
 }
+
 window.eDP-1 * {
-font-size: 17px;
+  font-size: 17px;
 }
 
+window.HDMI-A-1 * {
+  font-size: 14px;
+}
+
+window.DP-1 * {
+  font-size: 17px;
+}
+
+
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.5);
+  background-color: rgba(26, 27, 38, 0.1);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
