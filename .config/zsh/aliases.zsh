@@ -1,7 +1,6 @@
 # # ex - archive extractor
 # # usage: ex <file>
-ex ()
-{
+ex () {
   if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
@@ -29,14 +28,14 @@ alias pacman-update='sudo pacman-mirrors --geoip'
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
 alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
 
-# Use eza instead of ls, if available
+# Use eza instead of ls if available
 if hash exa 2>/dev/null; then
-   alias l='eza --color=always --group-directories-first'
+   alias l='eza --icons --color=always --group-directories-first'
    alias ls='eza -a --icons --color=always --group-directories-first' # my preferred listing
    alias la='eza -al --icons --color=always --group-directories-first'  # all files and dirs
    alias ll='eza -l --icons --color=always --group-directories-first'  # long format
    alias lt='eza -aT --icons --color=always --group-directories-first' # tree listing
-   alias l.='eza -a --icons | egrep "^\."'
+   alias l.='eza -a --icons | grep -E "^\."'
 else
    alias l='ls -lFh --color=auto'     #size,show type,human readable
    alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
@@ -88,7 +87,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias ping='ping -c 5'
-alias ssh='kitten ssh'
+# alias ssh='kitten ssh'
 alias sxiv='nsxiv'
 
 # vim aliases
@@ -105,8 +104,21 @@ else
    alias v='vi'
 fi
 
-alias hyprconf='cd $XDG_CONFIG_HOME/hypr && $EDITOR hyprland.conf'
-alias nvconf='cd $XDG_CONFIG_HOME/nvim && $EDITOR init.lua'
+# go to dir, edit file and come back
+goto-edit-back() {
+   current_dir="$(pwd)"
+   location="$1"
+   file="$2"
+   cd $location
+   $EDITOR $file
+   cd $current_dir
+}
+
+alias hyprconf='goto-edit-back $XDG_CONFIG_HOME/hypr hyprland.conf'
+alias nvconf='goto-edit-back $XDG_CONFIG_HOME/nvim init.lua'
+alias conf='goto-edit-back $XDG_CONFIG_HOME .'
+alias vimwiki='goto-edit-back $HOME/Documents/vimwiki index.md'
+alias sauce="source ~/.zshrc"
 
 # vim aliases
 
@@ -144,7 +156,6 @@ else
    alias "apt purge"="sudo apt purge"
 fi
 
-alias sauce="source ~/.zshrc"
 
 # youtube-dl
 if hash yt-dlp 2>/dev/null; then
