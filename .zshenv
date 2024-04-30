@@ -1,4 +1,9 @@
-# zshenv
+#               _
+#     ____ ___ | |__    ___  _ __ __   __
+#    |_  // __|| '_ \  / _ \| '_ \\ \ / /
+#  _  / / \__ \| | | ||  __/| | | |\ V /
+# (_)/___||___/|_| |_| \___||_| |_| \_/
+#
 
 # ZSH directories
 export ZDOTDIR=$HOME/.config/zsh
@@ -14,8 +19,7 @@ export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 export XDG_TEMPLATES_DIR="$HOME/Templates"
 export XDG_PUBLICSHARE_DIR="$HOME/Public"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
-# export XDG_MUSIC_DIR="$HOME/Music"
-export XDG_MUSIC_DIR="/mnt/storage/Music"
+export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
@@ -61,12 +65,15 @@ export WM="Hyprland"
 # Path
 export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts:$HOME/.spicetify
 
+# bin path for go packages
+export GOBIN=$HOME/.local/bin
+
 export EINSTEIN_USERNAME='connord4'
 
-# Values for shader caching for use in gaming.
-export __GL_SHADER_DISK_CACHE=1
+# Values for shader caching for use in gaming. (Nvidia)
+# export __GL_SHADER_DISK_CACHE=1
 # export __GL_SHADER_DISK_CACHE_PATH='/tmp/nvidia-shaders'
-export __GL_THREADED_OPTIMIZATION=1
+# export __GL_THREADED_OPTIMIZATION=1
 
 export LF_ICONS="\
 di=:\
@@ -246,4 +253,4 @@ export NNN_PLUG='o:fzopen'
 
 # export MANGOHUD=1
 
-export _microarchitecture=36
+# export _microarchitecture=36
