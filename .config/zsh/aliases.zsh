@@ -24,7 +24,7 @@ ex () {
 }
 
 # Pacman aliases
-alias pacman-update='sudo pacman-mirrors --geoip'
+alias pacmirrors='sudo systemctl start reflector.service' # refresh and rank mirrors with reflector
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
 alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
 
