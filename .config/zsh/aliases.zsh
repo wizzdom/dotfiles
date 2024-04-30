@@ -117,6 +117,7 @@ goto-edit-back() {
 alias hyprconf='goto-edit-back $XDG_CONFIG_HOME/hypr hyprland.conf'
 alias nvconf='goto-edit-back $XDG_CONFIG_HOME/nvim init.lua'
 alias conf='goto-edit-back $XDG_CONFIG_HOME .'
+alias ge='goto-edit-back'
 alias vimwiki='goto-edit-back $HOME/Documents/vimwiki index.md'
 alias sauce="source ~/.zshrc"
 
