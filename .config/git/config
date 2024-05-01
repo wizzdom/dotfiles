@@ -1,0 +1,63 @@
+[user]
+	email = dom@wizzdom.xyz
+	name = wizzdom
+	username = wizzdom
+	signingkey = dom@wizzdom.xyz
+
+[init]
+	defaultBranch = master
+
+[commit]
+	gpgsign = true
+
+[push]
+  default = current
+	autoSetupRemote = true
+
+[tag]
+	forceSignAnnotated = true
+
+[core]
+  editor = nvim
+  # global gitignore
+  ; excludesfile = ~/.gitignore_global
+  # for windows
+  #autocrlf = true
+  # use aggressive compression
+  # can make your repo smaller but can also be slow
+  compression = 9
+  # tells git to ignore file permission changes
+  # filemode = false
+  pager = 'less'
+
+[color]
+  ui = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+  remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+  whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+  untracked = red bold
+
+[diff]
+  tool = nvim -d
+
+[difftool]
+  prompt = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
