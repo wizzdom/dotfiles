@@ -33,6 +33,7 @@ export LESS_TERMCAP_so=$'\E[1;33m'
 export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[1;32m'
 
+export HSTR_CONFIG=hicolor
 
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
