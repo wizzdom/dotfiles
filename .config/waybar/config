@@ -33,40 +33,39 @@
         "spacing": 10
     },
     "clock": {
-        "format": "<span color='#bf616a'>  </span>{:%H:%M %a %d %b}",
-        "format-alt": "<span color='#bf616a'> </span>{:%H:%M}",
+        "format": "<span font_size='larger' color='#bf616a'> </span>{:%H:%M %a %d %b}",
+        "format-alt": "<span font_size='larger' color='#bf616a'> </span>{:%H:%M}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     },
 
     "cpu": {
       "interval": 10,
-      "format": " {}%",
+      "format": "<span font_size='larger'></span> {}%",
       "max-length": 10,
       "on-click": "",
     },
     "memory": {
         "interval": 30,
-        "format": " {}%",
+        "format": "<span font_size='larger'></span> {}%",
         "format-alt":" {used:0.1f}G",
         "max-length": 10,
     },
     "backlight": {
         "device": "eDP-1",
-        "format": "{icon} {percent}%",
+        "format": "<span font_size='larger'>{icon}</span> {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",
     },
     "network": {
-        "format-wifi": "󰖩 {essid} {signalStrength}%",
-        "format-ethernet": " {ipaddr}",
-        "format-disconnected": "睊",
+        "format-wifi": "<span font_size='larger'>󰖩</span> {essid} {signalStrength}%",
+        "format-ethernet": "<span font_size='larger'></span> {ipaddr}",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "on-click": "nm-connection-editor",
         "format-disconnected": "Disconnected  ",
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
+        "format": "<span font_size='larger'>{icon}</span> {volume}%",
         "ignored-sinks": ["JamesDSP Sink"],
         "format-bluetooth": "  {volume}%",
         "format-bluetooth-muted": " ",
@@ -84,7 +83,7 @@
 
     "bluetooth": {
         "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
-        "format": " {status}",
+        "format": "<span font_size='larger'></span> {status}",
     },
 
     "battery": {
@@ -118,7 +117,7 @@
     },
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
-        "on-click": "wofi -show drun, run",
+        "on-click": "pidof wofi || wofi -show drun, run",
     },
 }
 

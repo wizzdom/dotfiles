@@ -13,12 +13,12 @@ window.HDMI-A-1 * {
 }
 
 window.DP-1 * {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.1);
+  background-color: rgba(26, 27, 38, 0);
   color: #ffffff;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -91,42 +91,44 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-  padding: 1px 10px 1px;
+  padding: 2px 10px 2px;
   color: #e5e5e5;
   /* color: #bf616a; */
-  border-radius: 9.5px;
-  background-color: #1f2530;
+  border-radius: 16px;
+  background-color: rgba(31, 37, 48, 0.7);
 }
 
 #window,
 #workspaces {
   margin: 0 4px;
-  border-radius: 7.8px;
-  background-color: #1f2530;
+  border-radius: 16px;
+  background-color: rgba(31, 37, 48, 0.7);
 }
 
 #cpu {
   color: #fb958b;
-  background-color: #1f2530;
+  background-color: rgba(31, 37, 48, 0.7);
 }
 
 #memory {
   color: #ebcb8b;
-  background-color: #1f2530;
+  background-color: rgba(31, 37, 48, 0.7);
 }
 
 #custom-power-menu {
-  border-radius: 9.5px;
-  background-color: #1b242b;
-  border-radius: 7.5px;
+  border-radius: 16px;
+  background-color: rgba(31, 37, 48, 0.7);
+  border-radius: 16px;
   padding: 0 5px;
+  font-size: 20px;
 }
 
 #custom-launcher {
-  background-color: #1b242b;
+  background-color: rgba(31, 37, 48, 0.7);
   color: #6a92d7;
-  border-radius: 7.5px;
+  border-radius: 16px;
   padding: 0 3px;
+  font-size: 20px;
 }
 
 #custom-weather.severe {
