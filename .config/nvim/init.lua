@@ -1238,7 +1238,7 @@ require("lazy").setup({
 			vim.keymap.set("i", "<tab>", "<cmd>AutolistTab<cr>")
 			vim.keymap.set("i", "<s-tab>", "<cmd>AutolistShiftTab<cr>")
 			-- vim.keymap.set("i", "<c-t>", "<c-t><cmd>AutolistRecalculate<cr>") -- an example of using <c-t> to indent
-			vim.keymap.set("i", "<CR>", "<CR><Esc><cmd>AutolistNewBullet<cr>i")
+			vim.keymap.set("i", "<CR>", "<CR><Esc><cmd>AutolistNewBullet<cr>a")
 			vim.keymap.set("n", "o", "o<cmd>AutolistNewBullet<cr>")
 			vim.keymap.set("n", "O", "O<cmd>AutolistNewBulletBefore<cr>")
 			vim.keymap.set("n", "<CR>", "<cmd>AutolistToggleCheckbox<cr><CR>")
