@@ -955,6 +955,10 @@ require("lazy").setup({
 						name = "Redbrick Open Governance",
 						path = "~/repos/redbrick/open-governance",
 					},
+					{
+						name = "Redbrick Open Governance",
+						path = "~/repos/redbrick/blog",
+					},
 				},
 				-- Optional, set the log level for obsidian.nvim. This is an integer corresponding to one of the log
 				-- levels defined by "vim.log.levels.*".
