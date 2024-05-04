@@ -44,3 +44,9 @@ Thumbs.db
 # Editor files #
 ################
 .vscode
+
+################
+# dotfiles     #
+################
+.config/hypr/device/device.conf
+.config/hypr/card
