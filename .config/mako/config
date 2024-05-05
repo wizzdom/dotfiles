@@ -1,22 +1,18 @@
-sort=-time
-layer=overlay
-background-color=#050505cc
-width=300
-height=110
+anchor=bottom-right
+font=Fira Code Nerd Font Mono 10
+background-color=#24283b
+text-color=#c0caf5
+width=350
+margin=0,20,20
+padding=10
 border-size=2
-border-color=#88c0d0
-border-radius=15
-icons=1
-max-icon-size=64
-default-timeout=5000
-ignore-timeout=1
-font=fira code nerd font 10
+border-color=#414868
+border-radius=10
+default-timeout=10000
+group-by=summary
 
-[urgency=low]
-border-color=#cccccc
-
-[urgency=normal]
-border-color=#30C1EF
+[grouped]
+format=<b>%s</b>\n%b
 
 [urgency=high]
 border-color=#bf616a
