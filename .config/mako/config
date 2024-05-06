@@ -1,6 +1,6 @@
-anchor=bottom-right
+anchor=top-right
 font=Fira Code Nerd Font Mono 10
-background-color=#24283b
+background-color=#24283bcc
 text-color=#c0caf5
 width=350
 margin=0,20,20
