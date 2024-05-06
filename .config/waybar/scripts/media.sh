@@ -17,9 +17,9 @@ while true; do
             player_info="$(playerctl metadata title | cut -c1-40)"
         fi
 		if [ "$player_status" = "Playing" ]; then
-            echo " ⏵ $player_info"
+            echo " $player_info"
 		elif [ "$player_status" = "Paused" ]; then
-			echo " ⏸ $player_info"
+			echo " $player_info"
     else
 			echo ""
 		fi
