@@ -114,18 +114,18 @@ fi
 # go to dir, edit file and come back
 goto-edit-back() {
    current_dir="$(pwd)"
-   location="$1"
-   file="$2"
+   location=$(dirname "$1")
+   file=$(basename "$1")
    cd $location
    $EDITOR $file
    cd $current_dir
 }
 
-alias hyprconf='goto-edit-back $XDG_CONFIG_HOME/hypr hyprland.conf'
-alias nvconf='goto-edit-back $XDG_CONFIG_HOME/nvim init.lua'
-alias conf='goto-edit-back $XDG_CONFIG_HOME .'
+alias hyprconf='goto-edit-back $XDG_CONFIG_HOME/hypr/hyprland.conf'
+alias nvconf='goto-edit-back $XDG_CONFIG_HOME/nvim/init.lua'
+alias conf='goto-edit-back $XDG_CONFIG_HOME'
 alias ge='goto-edit-back'
-alias vimwiki='goto-edit-back $HOME/Documents/vimwiki index.md'
+alias vimwiki='goto-edit-back $HOME/Documents/vimwiki/index.md'
 alias sauce="source ~/.zshrc"
 
 # vim aliases
@@ -213,7 +213,7 @@ alias gd='git diff'
 alias gp='git pull'
 alias gpush='git push'
 alias gpull='git pull'
-alias glog='git log'
+alias glog='git log --graph --decorate'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 
@@ -236,4 +236,4 @@ alias yd='yadm diff'
 alias yp='yadm pull'
 alias ypull='yadm pull'
 alias ypush='yadm push'
-alias ylog='yadm log'
+alias ylog='yadm log --graph --decorate'
