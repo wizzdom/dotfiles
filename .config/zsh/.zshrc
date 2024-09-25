@@ -76,8 +76,9 @@ fi
 [ -f "$ZDOTDIR/aliases.zsh" ] && source "$ZDOTDIR/aliases.zsh"
 [ -f "$ZDOTDIR/ghcli.zsh" ] && source "$ZDOTDIR/ghcli.zsh"
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/nomad nomad
-complete -C /usr/bin/consul consul
+[ -f "/usr/bin/nomad" ] && complete -o nospace -C /usr/bin/nomad nomad
+[ -f "/usr/bin/consul" ] && complete -C /usr/bin/consul consul
+[ -f "/usr/bin/mcli" ] && complete -o nospace -C /usr/bin/mcli mcli
 
 # Load - should be last.
 # Only load if exists.

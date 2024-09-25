@@ -34,6 +34,7 @@ ex () {
 alias pacmirrors='sudo systemctl start reflector.service' # refresh and rank mirrors with reflector
 alias killtheorphans="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required
 alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer required (Short)
+alias garbage="sudo paccache -rk 1" # Remove old package cache, keeping last 1
 
 # Use eza instead of ls if available
 if hash exa 2>/dev/null; then
@@ -56,7 +57,6 @@ else
 fi
 
 alias locate="plocate"
-alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
 
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
@@ -123,6 +123,7 @@ goto-edit-back() {
 
 alias hyprconf='goto-edit-back $XDG_CONFIG_HOME/hypr/hyprland.conf'
 alias nvconf='goto-edit-back $XDG_CONFIG_HOME/nvim/init.lua'
+alias zshrc='goto-edit-back $XDG_CONFIG_HOME/zsh/.zshrc'
 alias conf='goto-edit-back $XDG_CONFIG_HOME'
 alias ge='goto-edit-back'
 alias vimwiki='goto-edit-back $HOME/Documents/vimwiki/index.md'
