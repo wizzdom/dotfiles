@@ -175,12 +175,21 @@ autocmd("BufWritePre", {
 	end,
 })
 
+autocmd("BufWritePre", {
+	desc = "Format buffer on save using nomad fmt",
+	group = augroup("nomad-format", { clear = true }),
+	pattern = { "*.nomad", "*.nomad.hcl", "**/nomad/**/*.hcl" },
+	callback = function()
+		vim.cmd([[%!nomad fmt -]])
+	end,
+})
+
 vim.filetype.add({
 	pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
 })
 
 -- Hyprlang LSP
-vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+autocmd({ "BufEnter", "BufWinEnter" }, {
 	pattern = { "*.hl", "hypr*.conf" },
 	callback = function(event)
 		print(string.format("starting hyprls for %s", vim.inspect(event)))
