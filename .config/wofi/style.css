@@ -1,68 +1,72 @@
-/* Kattunge Wofi v2.1 // Aug 2022 */
-
-@define-color background rgba(0, 0, 0, 0.80);
-@define-color foreground rgb(220, 220, 220);
-@define-color outline rgba(255, 255, 255, 0.15);
-@define-color accent rgb(226, 204, 219);
-@define-color textbox rgba(255, 255, 255, 0.05);
-@define-color highlight rgba(255, 255, 255, 0.1);
-
-* {
-    all:unset;
-}
-
 window {
-    background-color: @background;
-    border-radius: 10px;
-    border: 1px solid @outline;
-    font-family: Inter Nerd Font;
-    font-weight: 200;
-}
-
-#outer-box {
-    padding: 2em;
+  margin: 0px;
+  border: 2px solid #414868;
+  border-radius: 5px;
+  background-color: #24283b;
+  font-family: monospace;
+  font-size: 12px;
 }
 
 #input {
-    padding:1em .75em;
-    margin: 0em .25em;
-    font-size:1.5em;
-    background-color: @background;
-    border: 1px solid transparent;
-    box-shadow: inset 0 -.15rem @accent;
-    transition: background-color .30s ease-in-out;
+  margin: 5px;
+  border: 1px solid #24283b;
+  color: #c0caf5;
+  background-color: #24283b;
 }
 
 #input image {
-    margin-right:-1em;
-    color:transparent;
+  margin-right: 0.5em;
+  color: #c0caf5;
 }
 
-#input:focus {
-    background:@highlight;
-    border: 1px solid @outline;
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: #24283b;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: #24283b;
 }
 
 #scroll {
-    margin-top: 1.5em;
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: #c0caf5;
 }
 
 #entry {
-    border: 1px solid transparent;
-    padding:1em;
-    margin: .25rem;
-    font-weight: normal;
-    box-shadow: inset 0rem 0px rgba(0, 0, 0, 0);
-    transition: box-shadow .30s ease-in-out, background-color .30s ease-in-out;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
 }
 
 #entry image {
-    margin-right: .75em;
+  margin-right: 0.75em;
+  width: 1em;
+  height: 1em;
 }
 
 #entry:selected {
-    background-color: @highlight;
-    border: 1px solid @outline;
-    box-shadow: inset .2rem 0px @accent;
-
+  background: rgb(41,46,66);
+  background: linear-gradient(342deg, rgba(41,46,66,1) 0%, rgba(122,162,247,1) 100%);
+  border-radius: 5px; /* Adds smooth rounded corners */
+  font-weight: normal;
+  color: #ffffff; /* Ensure text is visible on the gradient */
 }
+
+#text:selected {
+  border-radius: 5px; /* Matches the parent container */
+  font-weight: normal;
+  color: #ffffff; /* Ensure text contrasts with the gradient */
+}
+

@@ -1,10 +1,13 @@
-# Kattunge Wofi Config // Aug 2022
-monitor=DP-2
-show=drun,run
-columns=2
-width=35%
-no_actions=true
-allow_images=true
+width=40%
+lines=11
+
+hide_scroll = true
+allow_images = true
+image_size = 25
+prompt=Search...
+
+matching=fuzzy
 insensitive=true
-image_size=40
-prompt=   Search...
+columns=1
+layer=top
+gtk_dark=true
