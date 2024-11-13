@@ -6,7 +6,7 @@ allow_images = true
 image_size = 25
 prompt=Search...
 
-matching=fuzzy
+matching=contains
 insensitive=true
 columns=1
 layer=top
