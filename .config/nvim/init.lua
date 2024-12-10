@@ -1338,6 +1338,16 @@ require("lazy").setup({
 			{ "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
 		},
 	},
+	{
+		"sphamba/smear-cursor.nvim",
+
+		opts = {
+			cursor_color = "none",
+			smear_between_buffers = true,
+			smear_between_neighbor_lines = true,
+			legacy_computing_symbols_support = true,
+		},
+	},
 
 	-- { import = 'custom.plugins' },
 }, {
