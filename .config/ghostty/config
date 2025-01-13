@@ -5,6 +5,7 @@ auto-update = off
 font-family = "Fira Code Nerd Font Mono"
 theme = tokyonight_night
 background-opacity = 0.8
+background = #131313
 # make it work nicely with a tiling wm
 window-decoration = false
 confirm-close-surface = false
