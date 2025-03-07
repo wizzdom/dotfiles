@@ -51,7 +51,7 @@ export GDK_DPI_SCALE=1
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"
-export TERMINAL="kitty"
+export TERMINAL="ghostty"
 export BROWSER="zen-browser"
 export ALTBROWSER="firefox"
 export VIDEO="mpv"
@@ -64,7 +64,7 @@ export MANPAGER='nvim +Man!'
 export WM="Hyprland"
 
 # Path
-export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts:$HOME/.spicetify
+export PATH=$PATH:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.dotnet/tools:$HOME/scripts:$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin:$HOME/.spicetify
 
 # bin path for go packages
 export GOBIN=$HOME/.local/bin
