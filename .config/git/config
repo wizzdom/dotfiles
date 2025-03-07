@@ -5,7 +5,7 @@
 	signingkey = dom@wizzdom.xyz
 
 [init]
-	defaultBranch = master
+	defaultbranch = master
 
 [commit]
 	gpgsign = true
@@ -64,3 +64,7 @@
 
 [filter "spacify"]
 	clean = expand --tabs=2 --initial
+[pull]
+	ff = true
+[maintenance]
+	repo = /mnt/storage/repos/redbrick/nomad
