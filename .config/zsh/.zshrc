@@ -16,16 +16,30 @@ fi
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# History in cache directory:
+# history options
 HISTSIZE=10000
-SAVEHIST=10000
+SAVEHIST=$HISTSIZE
 HISTFILE=~/.cache/zshhistory
+HISTDUP=erase
 setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+
+# keybinds for history search
+bindkey "^p" history-search-backward
+bindkey "^n" history-search-forward
+
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # match lower to upper case
+zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}' # colorize completions
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)               # Include hidden files.
