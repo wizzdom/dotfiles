@@ -148,6 +148,16 @@ if hash paru 2>/dev/null; then
    alias yay="paru"
 fi
 
+# yazi integration
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # APT-Fast Aliases
 if hash apt-fast 2>/dev/null; then
    alias "apt install"="sudo apt-fast install"
