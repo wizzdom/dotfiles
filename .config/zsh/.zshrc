@@ -13,6 +13,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Enable colors and change prompt:
+export LS_COLORS="$(vivid generate tokyonight-night)"
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -36,12 +37,11 @@ bindkey "^n" history-search-forward
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Basic auto/tab complete:
-autoload -U compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # match lower to upper case
-zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}' # colorize completions
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}" # colorize completions
+autoload -U compinit && compinit -u
 zmodload zsh/complist
-compinit
 _comp_options+=(globdots)               # Include hidden files.
 
 # create a zkbd compatible hash;
@@ -85,6 +85,7 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
+
 
 # Load aliases and shortcuts if existent.
 [ -f "$ZDOTDIR/aliases.zsh" ] && source "$ZDOTDIR/aliases.zsh"

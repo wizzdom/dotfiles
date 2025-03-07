@@ -37,9 +37,9 @@ alias kto="sudo pacman -Qtdq | sudo pacman -Rns -" # Remove packages no longer r
 alias garbage="sudo paccache -rk 1" # Remove old package cache, keeping last 1
 
 # Use eza instead of ls if available
-if hash exa 2>/dev/null; then
+if hash eza 2>/dev/null; then
    alias l='eza --icons --color=always --group-directories-first'
-   alias ls='eza -a --icons --color=always --group-directories-first' # my preferred listing
+   alias ls='eza --icons --color=always --group-directories-first' # my preferred listing
    alias la='eza -al --icons --color=always --group-directories-first'  # all files and dirs
    alias ll='eza -l --icons --color=always --group-directories-first'  # long format
    alias lt='eza -aT --icons --color=always --group-directories-first' # tree listing
