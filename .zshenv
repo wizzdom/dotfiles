@@ -253,6 +253,7 @@ export NNN_TRASH=1
 export NNN_PLUG='o:fzopen'
 
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --preview 'bat {}' \
   --highlight-line \
   --info=inline-right \
   --ansi \
@@ -273,8 +274,8 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=query:#c0caf5:regular \
   --color=scrollbar:#27a1b9 \
   --color=separator:#ff9e64 \
-  --color=spinner:#ff007c \
-"
+  --color=spinner:#ff007c"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
 # export MANGOHUD=1
 
