@@ -1,0 +1,189 @@
+// settings.json, generated at Thu Nov 07 2024 18:01:50 GMT+0800 (Singapore Standard Time)
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "base_keymap": "VSCode",
+  "theme": "Tokyo Night",
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  // NOTE: Change the font family to your preference
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  // Vim mode settings
+  "vim_mode": true,
+  // use relative line numbers
+  "relative_line_numbers": true,
+  "tab_bar": {
+    "show": true
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  // Indentation, rainbow indentation
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  // NOTE: Zen mode, refer https://github.com/zed-industries/zed/issues/4382 when it's resolved
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
+  },
+  // Use Copilot Chat AI as default
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  // Uncomment below to use local AI with Ollama, refer https://zed.dev/docs/language-model-integration?highlight=ollama#using-ollama-on-macos
+  // "assistant": {
+  //   "default_model": {
+  //     "provider": "ollama",
+  //     "model": "llama3.1:latest"
+  //   },
+  //   "version": "2",
+  //   "provider": null
+  // },
+  // "language_models": {
+  //   "ollama": {
+  //     "api_url": "http://localhost:11434"
+  //   }
+  // },
+  // Inlay hints preconfigured by Zed: Go, Rust, Typescript and Svelte
+  "inlay_hints": {
+    "enabled": true
+  },
+  // LSP
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "classAttributes": ["class", "className", "ngClass", "styles"]
+      }
+    },
+    "discord_presence": {
+      "initialization_options": {
+        // Application ID for the rich presence (don't touch it unless you know what you're doing)
+        "application_id": "1263505205522337886",
+        // Base URL for all language icons
+        "base_icons_url": "https://raw.githubusercontent.com/xhyrom/zed-discord-presence/main/assets/icons/",
+
+        "state": "Working on {filename}",
+        "details": "In {workspace}",
+        // URL for the large image
+        "large_image": "{base_icons_url}/{language}.png",
+        "large_text": "{language:u}", // :u capitalizes the first letter
+        // URL for the small image
+        "small_image": "{base_icons_url}/zed.png",
+        "small_text": "Zed",
+
+        // Idle settings - when you're inactive
+        "idle": {
+          "timeout": 300, // Idle timeout in seconds (300 seconds = 5 minutes)
+
+          // Action to take when idle
+          // `change_activity` - changes the activity to idle with the following details
+          // `clear_activity` - clears the activity (hides it)
+          "action": "change_activity",
+
+          "state": "Idling",
+          "details": "In Zed",
+          "large_image": "{base_icons_url}/zed.png",
+          "large_text": "Zed",
+          "small_image": "{base_icons_url}/idle.png",
+          "small_text": "Idle"
+        },
+
+        // Rules to disable presence in specific workspaces
+        "rules": {
+          "mode": "blacklist", // Can also be "whitelist"
+          "paths": ["absolute path"]
+        },
+
+        "git_integration": true
+      }
+    }
+  },
+  "languages": {
+    // Refer https://zed.dev/docs/languages/javascript and https://zed.dev/docs/languages/typescript for more info
+    "TypeScript": {
+      // Refer https://github.com/jellydn/ts-inlay-hints for how to setup for Neovim and VSCode
+      "inlay_hints": {
+        "enabled": true,
+        "show_parameter_hints": false,
+        "show_other_hints": true,
+        "show_type_hints": true
+      }
+    },
+    "Python": {
+      "format_on_save": { "language_server": { "name": "ruff" } },
+      "formatter": { "language_server": { "name": "ruff" } },
+      "language_servers": ["pyright", "ruff"]
+    }
+  },
+  // Use zed commit editor
+  "terminal": {
+    "env": {
+      "EDITOR": "zed --wait"
+    }
+  },
+  // File syntax highlighting
+  "file_types": {
+    "Dockerfile": ["Dockerfile", "Dockerfile.*"],
+    "JSON": ["json", "jsonc", "*.code-snippets"]
+  },
+  // File scan exclusions, hide on the file explorer and search
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // above is default from Zed
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules"
+  ],
+  // Turn off telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // Move all panel to the right
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "git_status": true
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  // Move some unnecessary panels to the left
+  "notification_panel": {
+    "dock": "right"
+  },
+  "chat_panel": {
+    "dock": "right"
+  }
+}
