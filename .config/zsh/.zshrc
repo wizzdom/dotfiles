@@ -102,6 +102,8 @@ autoload -U +X bashcompinit && bashcompinit
 [ -f "/usr/share/autojump/autojump.zsh" ] && source /usr/share/autojump/autojump.zsh 2>/dev/null
 # zoxide - intelligent cd command
 eval "$(zoxide init --cmd cd zsh)"
+# fzf integration
+eval "$(fzf --zsh)"
 
 [ -f "$ZDOTDIR/powerlevel10k/powerlevel10k.zsh-theme" ] && source "$ZDOTDIR/powerlevel10k/powerlevel10k.zsh-theme"
 
