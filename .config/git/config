@@ -1,21 +1,21 @@
 [user]
-	email = dom@wizzdom.xyz
-	name = wizzdom
-	username = wizzdom
-	signingkey = dom@wizzdom.xyz
+  email = dom@wizzdom.xyz
+  name = wizzdom
+  username = wizzdom
+  signingkey = dom@wizzdom.xyz
 
 [init]
-	defaultbranch = master
+  defaultbranch = master
 
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [push]
   default = current
-	autoSetupRemote = true
+  autoSetupRemote = true
 
 [tag]
-	forceSignAnnotated = true
+  forceSignAnnotated = true
 
 [core]
   editor = nvim
@@ -28,27 +28,53 @@
   compression = 9
   # tells git to ignore file permission changes
   # filemode = false
-  pager = 'less'
+  ; pager = less
+  ; pager = bat
+  pager = delta
 
 [color]
-  ui = auto
+  ui = true
 
 [color "branch"]
-	current = yellow bold
-	local = green bold
+  current = yellow bold
+  local = green bold
   remote = cyan bold
-
+;
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
   whitespace = red reverse
 
 [color "status"]
-	added = green bold
-	changed = yellow bold
+  added = green bold
+  changed = yellow bold
+  deleted = red bold
   untracked = red bold
+
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  features = tokyonight_night
+  dark = true
+  ; side-by-side = true
+  line-numbers = true
+
+[delta "tokyonight_night"]
+  minus-style                   = syntax "#37222c"
+  minus-non-emph-style          = syntax "#37222c"
+  minus-emph-style              = syntax "#713137"
+  minus-empty-line-marker-style = syntax "#37222c"
+  line-numbers-minus-style      = "#914c54"
+  plus-style                    = syntax "#20303b"
+  plus-non-emph-style           = syntax "#20303b"
+  plus-emph-style               = syntax "#2c5a66"
+  plus-empty-line-marker-style  = syntax "#20303b"
+  line-numbers-plus-style       = "#449dab"
+  line-numbers-zero-style       = "#3b4261"
+
+[merge]
+    conflictstyle = zdiff3
 
 [diff]
   tool = nvim -d
@@ -63,8 +89,10 @@
   required = true
 
 [filter "spacify"]
-	clean = expand --tabs=2 --initial
+  clean = expand --tabs=2 --initial
+
 [pull]
-	ff = true
+  ff = true
+
 [maintenance]
-	repo = /mnt/storage/repos/redbrick/nomad
+  repo = /mnt/storage/repos/redbrick/nomad
