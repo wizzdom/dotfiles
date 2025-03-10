@@ -126,13 +126,10 @@ gui:
   # If true, show jump-to-window keybindings in window titles.
   showPanelJumps: true
 
-  # Deprecated: use nerdFontsVersion instead
-  showIcons: false
-
   # Nerd fonts version to use.
   # One of: '2' | '3' | empty string (default)
   # If empty, do not show icons.
-  nerdFontsVersion: ""
+  nerdFontsVersion: "3"
 
   # If true (default), file icons are shown in the file views. Only relevant if NerdFontsVersion is not empty.
   showFileIcons: true
