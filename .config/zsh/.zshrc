@@ -89,7 +89,7 @@ fi
 
 # Load aliases and shortcuts if existent.
 [ -f "$ZDOTDIR/aliases.zsh" ] && source "$ZDOTDIR/aliases.zsh"
-[ -f "$ZDOTDIR/ghcli.zsh" ] && source "$ZDOTDIR/ghcli.zsh"
+eval $(gh completion --shell zsh)
 autoload -U +X bashcompinit && bashcompinit
 [ -f "/usr/bin/nomad" ] && complete -o nospace -C /usr/bin/nomad nomad
 [ -f "/usr/bin/consul" ] && complete -C /usr/bin/consul consul
