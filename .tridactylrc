@@ -1,0 +1,15 @@
+" General Settings
+set update.lastchecktime 1747043765975
+set update.nag true
+set update.nagwait 7
+set update.lastnaggedversion 1.14.0
+set update.checkintervalsecs 86400
+set configversion 2.0
+set theme dark
+set tabclosepinned false
+
+" Autocmds
+autocmd DocStart boot.dev mode ignore
+
+" For syntax highlighting see https://github.com/tridactyl/vim-tridactyl
+" vim: set filetype=tridactyl
