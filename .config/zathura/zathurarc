@@ -10,6 +10,8 @@ set smooth-scroll "true"
 set scroll-full-overlap 0.01
 set scroll-step 50
 
+set database sqlite
+
 # Tokyonight color theme for Zathura
 # Swaps Foreground for Background to get a light version if the user prefers
 #
