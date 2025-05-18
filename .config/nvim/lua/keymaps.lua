@@ -17,6 +17,8 @@ end
 vim.cmd([[command! ToggleMouse lua ToggleMouse()]])
 vim.keymap.set("n", "<Leader>m", ":ToggleMouse<CR>", { noremap = true, silent = true, desc = "Toggle Mouse" })
 
+vim.keymap.set("n", "<Leader>p", ":Copilot toggle<CR>", { noremap = true, silent = true, desc = "Toggle Copilot" })
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 

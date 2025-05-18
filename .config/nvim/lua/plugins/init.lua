@@ -1,7 +1,3 @@
-local utils = require("utils")
-local augroup = utils.augroup
-local autocmd = utils.autocmd
-
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
@@ -120,6 +116,7 @@ return {
 				-- disable italic for functions
 				styles = {
 					functions = {},
+					comments = { italic = true },
 				},
 				sidebars = { "qf", "vista_kind", "terminal", "packer" },
 				-- Change the "hint" color to the "orange" color, and make the "error" color bright red

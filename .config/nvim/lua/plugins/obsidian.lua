@@ -22,7 +22,7 @@ return {
 					path = "~/repos/redbrick/open-governance",
 				},
 				{
-					name = "Redbrick Open Governance",
+					name = "Redbrick Blog",
 					path = "~/repos/redbrick/blog",
 				},
 			},
