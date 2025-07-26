@@ -46,27 +46,22 @@ window {
   margin: 5px;
   padding: 5px;
   border: none;
-  display: flex;
-  align-items: center;
 }
 
 #entry image {
   margin-right: 0.75em;
-  width: 1em;
-  height: 1em;
 }
 
 #entry:selected {
-  background: rgb(41,46,66);
-  background: linear-gradient(342deg, rgba(41,46,66,1) 0%, rgba(122,162,247,1) 100%);
-  border-radius: 5px; /* Adds smooth rounded corners */
+  background: rgb(41, 46, 66);
+  background: linear-gradient(342deg, rgba(41, 46, 66, 1) 0%, rgba(122, 162, 247, 1) 100%);
+  border-radius: 5px;
   font-weight: normal;
-  color: #ffffff; /* Ensure text is visible on the gradient */
+  color: #ffffff;
 }
 
 #text:selected {
-  border-radius: 5px; /* Matches the parent container */
+  border-radius: 5px;
   font-weight: normal;
-  color: #ffffff; /* Ensure text contrasts with the gradient */
+  color: #ffffff;
 }
-
