@@ -31,5 +31,5 @@ return {
 			hijack_netrw_behavior = "open_current",
 		},
 	},
-	vim.keymap.set("n", "<C-o>", "<cmd>Neotree toggle<CR>", { desc = "Toggle File Tree (Neo-tree)" }),
+	vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle File Tree (Neo-tree)" }),
 }
