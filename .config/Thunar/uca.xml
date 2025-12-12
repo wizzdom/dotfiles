@@ -1,0 +1,4794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Open terminal in containing directory</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>edit-find</icon>
+	<name>Find in this folder</name>
+	<submenu></submenu>
+	<unique-id>3-3</unique-id>
+	<command>catfish --path=%f</command>
+	<description>Search for files within this folder</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to '7z'</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>14570771</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to '7z'&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to '7z' with password</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>04465151</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to '7z' with password&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to 'tar.gz'</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>16216533</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to 'tar.gz'&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to 'tar.xz'</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>83965033</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to 'tar.xz'&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to 'tar.zst'</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>75988091</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to 'tar.zst'&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to 'zip'</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>94081562</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to 'zip'&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compress to 'zip' with password</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>16122119</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Compress to 'zip' with password&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Extract here</name>
+	<submenu>Scripts/Archive</submenu>
+	<unique-id>69636628</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Archive/Extract here&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Media: Concatenate files</name>
+	<submenu>Scripts/Audio and Video/Audio and Video: Tools</submenu>
+	<unique-id>97062812</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio and Video: Tools/Media: Concatenate files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Media: Remove metadata</name>
+	<submenu>Scripts/Audio and Video/Audio and Video: Tools</submenu>
+	<unique-id>82261150</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio and Video: Tools/Media: Remove metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Media: Show basic metadata</name>
+	<submenu>Scripts/Audio and Video/Audio and Video: Tools</submenu>
+	<unique-id>60144201</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio and Video: Tools/Media: Show basic metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Mix channels to mono</name>
+	<submenu>Scripts/Audio and Video/Audio: Channels</submenu>
+	<unique-id>08970150</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Channels/Audio: Mix channels to mono&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Mix two files</name>
+	<submenu>Scripts/Audio and Video/Audio: Channels</submenu>
+	<unique-id>66130515</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Channels/Audio: Mix two files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to FLAC</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>07281617</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to FLAC&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to MP3 (192 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>94601199</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to MP3 (192 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to MP3 (320 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>17266788</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to MP3 (320 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to MP3 (48 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>52519519</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to MP3 (48 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OGG (192 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>27837334</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OGG (192 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OGG (320 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>85507534</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OGG (320 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OGG (48 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>14843273</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OGG (48 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OPUS (192 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>80246146</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OPUS (192 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OPUS (320 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>87836630</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OPUS (320 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to OPUS (48 kbps)</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>18816080</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to OPUS (48 kbps)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Convert to WAV</name>
+	<submenu>Scripts/Audio and Video/Audio: Convert</submenu>
+	<unique-id>66661831</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Convert/Audio: Convert to WAV&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Fade-in</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>13547949</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Fade-in&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Fade-out</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>61506009</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Fade-out&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Remove silence (extremities)</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>52011861</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Remove silence (extremities)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Remove silence (sections)</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>85714988</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Remove silence (sections)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Silence noise</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>99286892</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Silence noise&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Volume normalize</name>
+	<submenu>Scripts/Audio and Video/Audio: Effects</submenu>
+	<unique-id>82761908</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Effects/Audio: Volume normalize&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MP3: (artist - title) ID3 to Name</name>
+	<submenu>Scripts/Audio and Video/Audio: MP3 files</submenu>
+	<unique-id>20684082</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: MP3 files/MP3: (artist - title) ID3 to Name&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MP3: (artist - title) Name to ID3</name>
+	<submenu>Scripts/Audio and Video/Audio: MP3 files</submenu>
+	<unique-id>37712253</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: MP3 files/MP3: (artist - title) Name to ID3&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MP3: Show encoding details</name>
+	<submenu>Scripts/Audio and Video/Audio: MP3 files</submenu>
+	<unique-id>33547290</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: MP3 files/MP3: Show encoding details&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MP3: Volume maximize (recursive)</name>
+	<submenu>Scripts/Audio and Video/Audio: MP3 files</submenu>
+	<unique-id>30390077</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: MP3 files/MP3: Volume maximize (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>MP3: Volume normalize (recursive)</name>
+	<submenu>Scripts/Audio and Video/Audio: MP3 files</submenu>
+	<unique-id>63543837</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: MP3 files/MP3: Volume normalize (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Check quality</name>
+	<submenu>Scripts/Audio and Video/Audio: Quality</submenu>
+	<unique-id>39748072</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Quality/Audio: Check quality&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Audio: Produce a spectrogram</name>
+	<submenu>Scripts/Audio and Video/Audio: Quality</submenu>
+	<unique-id>28896150</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Audio: Quality/Audio: Produce a spectrogram&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Aspect to 1:1</name>
+	<submenu>Scripts/Audio and Video/Video: Aspect ratio</submenu>
+	<unique-id>10384387</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Aspect ratio/Video: Aspect to 1:1&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Aspect to 16:10</name>
+	<submenu>Scripts/Audio and Video/Video: Aspect ratio</submenu>
+	<unique-id>04360679</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Aspect ratio/Video: Aspect to 16:10&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Aspect to 16:9</name>
+	<submenu>Scripts/Audio and Video/Video: Aspect ratio</submenu>
+	<unique-id>56164822</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Aspect ratio/Video: Aspect to 16:9&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Aspect to 4:3</name>
+	<submenu>Scripts/Audio and Video/Video: Aspect ratio</submenu>
+	<unique-id>77923670</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Aspect ratio/Video: Aspect to 4:3&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Extract audio</name>
+	<submenu>Scripts/Audio and Video/Video: Audio track</submenu>
+	<unique-id>04328363</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Audio track/Video: Extract audio&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Remove audio</name>
+	<submenu>Scripts/Audio and Video/Video: Audio track</submenu>
+	<unique-id>13528639</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Audio track/Video: Remove audio&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to MKV</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>35820620</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to MKV&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to MKV (copy)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>78735914</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to MKV (copy)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to MP4</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>04182187</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to MP4&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to MP4 (copy)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>54579813</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to MP4 (copy)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to WebM</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>07348148</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to WebM&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Convert to WebM (copy)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>98228311</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Convert to WebM (copy)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export to GIF (10 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>86191858</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Export to GIF (10 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export to GIF (1 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>35656088</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Export to GIF (1 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export to GIF (5 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Convert</submenu>
+	<unique-id>32678684</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Convert/Video: Export to GIF (5 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export frames (10 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Export frames</submenu>
+	<unique-id>13130515</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Export frames/Video: Export frames (10 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export frames (1 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Export frames</submenu>
+	<unique-id>12874913</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Export frames/Video: Export frames (1 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Export frames (5 FPS)</name>
+	<submenu>Scripts/Audio and Video/Video: Export frames</submenu>
+	<unique-id>05461055</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Export frames/Video: Export frames (5 FPS)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Flip (horizontal)</name>
+	<submenu>Scripts/Audio and Video/Video: Flip, Rotate</submenu>
+	<unique-id>49603750</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Flip, Rotate/Video: Flip (horizontal)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Flip (vertical)</name>
+	<submenu>Scripts/Audio and Video/Video: Flip, Rotate</submenu>
+	<unique-id>23040724</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Flip, Rotate/Video: Flip (vertical)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Rotate (180 deg)</name>
+	<submenu>Scripts/Audio and Video/Video: Flip, Rotate</submenu>
+	<unique-id>87997695</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Flip, Rotate/Video: Rotate (180 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Rotate (270 deg)</name>
+	<submenu>Scripts/Audio and Video/Video: Flip, Rotate</submenu>
+	<unique-id>47810418</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Flip, Rotate/Video: Rotate (270 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Rotate (90 deg)</name>
+	<submenu>Scripts/Audio and Video/Video: Flip, Rotate</submenu>
+	<unique-id>54445841</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Flip, Rotate/Video: Rotate (90 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Frame rate to 30 FPS</name>
+	<submenu>Scripts/Audio and Video/Video: Frame rate</submenu>
+	<unique-id>74460524</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Frame rate/Video: Frame rate to 30 FPS&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Frame rate to 60 FPS</name>
+	<submenu>Scripts/Audio and Video/Video: Frame rate</submenu>
+	<unique-id>29994766</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Frame rate/Video: Frame rate to 60 FPS&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Resize (25 pct)</name>
+	<submenu>Scripts/Audio and Video/Video: Resize</submenu>
+	<unique-id>46398826</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Resize/Video: Resize (25 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Resize (50 pct)</name>
+	<submenu>Scripts/Audio and Video/Video: Resize</submenu>
+	<unique-id>40617832</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Resize/Video: Resize (50 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Resize (75 pct)</name>
+	<submenu>Scripts/Audio and Video/Video: Resize</submenu>
+	<unique-id>61829323</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Resize/Video: Resize (75 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Speed to 0.5</name>
+	<submenu>Scripts/Audio and Video/Video: Speed</submenu>
+	<unique-id>06123835</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Speed/Video: Speed to 0.5&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Speed to 1.5</name>
+	<submenu>Scripts/Audio and Video/Video: Speed</submenu>
+	<unique-id>82429900</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Speed/Video: Speed to 1.5&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Video: Speed to 2.0</name>
+	<submenu>Scripts/Audio and Video/Video: Speed</submenu>
+	<unique-id>25660144</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Audio and Video/Video: Speed/Video: Speed to 2.0&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compute all checksums</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>87062348</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Compute all checksums&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compute MD5</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>35982588</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Compute MD5&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compute SHA1</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>76956409</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Compute SHA1&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compute SHA256</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>47879784</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Compute SHA256&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compute SHA512</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>71320074</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Compute SHA512&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Generate MD5 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>84926667</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Generate MD5 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Generate SHA1 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>31880949</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Generate SHA1 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Generate SHA256 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>63435415</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Generate SHA256 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Generate SHA512 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>82777528</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Generate SHA512 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Verify MD5 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>67191206</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Verify MD5 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Verify SHA1 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>30260043</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Verify SHA1 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Verify SHA256 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>13932944</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Verify SHA256 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Verify SHA512 file</name>
+	<submenu>Scripts/Checksum</submenu>
+	<unique-id>86355351</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Checksum/Verify SHA512 file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy file contents</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>75935455</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Copy file contents&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy file names</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>33850960</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Copy file names&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy file names (recursive)</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>39912094</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Copy file names (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy file paths</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>27436356</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Copy file paths&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy file paths (recursive)</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>12705216</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Copy file paths (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Paste clipboard content</name>
+	<submenu>Scripts/Clipboard</submenu>
+	<unique-id>19422244</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Clipboard/Paste clipboard content&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compare items</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>65274851</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Compare items&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Compare items (via Diff)</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>04854583</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Compare items (via Diff)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Find duplicate files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>07441801</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Find duplicate files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Find empty directories</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>75608345</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Find empty directories&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Find empty files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>72794602</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Find empty files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Find junk files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>86448152</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Find junk files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Flatten directory structure</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>61869775</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Flatten directory structure&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List hidden files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>28100110</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/List hidden files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List largest directories</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>72180616</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/List largest directories&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List largest files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>27285145</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/List largest files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List permissions and owners</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>26850926</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/List permissions and owners&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List recent files</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>86697710</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/List recent files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Open item location</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>41772008</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Open item location&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Reset permissions (recursive)</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>52069726</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Reset permissions (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Show files information</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>06874419</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Show files information&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Show files metadata</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>40533780</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Show files metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Show files MIME type</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>19329069</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Show files MIME type&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Show media information</name>
+	<submenu>Scripts/Directories and Files</submenu>
+	<unique-id>94496023</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Directories and Files/Show media information&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to DOCX</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>72722704</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to DOCX&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to EPUB</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>75428542</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to EPUB&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to Markdown</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>71743088</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to Markdown&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to ODP</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>42710657</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to ODP&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to ODS</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>89141703</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to ODS&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to ODT</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>52476265</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to ODT&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to PDF</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>60728361</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to PDF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to PPTX</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>50847238</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to PPTX&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to TXT</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>88343174</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to TXT&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Document: Convert to XLSX</name>
+	<submenu>Scripts/Document/Document: Convert</submenu>
+	<unique-id>22136814</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/Document: Convert/Document: Convert to XLSX&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Find annotated PDFs</name>
+	<submenu>Scripts/Document/PDF: Annotations</submenu>
+	<unique-id>27040705</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Annotations/PDF: Find annotated PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Remove annotations</name>
+	<submenu>Scripts/Document/PDF: Annotations</submenu>
+	<unique-id>14912152</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Annotations/PDF: Remove annotations&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Combine multiple PDFs</name>
+	<submenu>Scripts/Document/PDF: Combine, Split</submenu>
+	<unique-id>37649206</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Combine, Split/PDF: Combine multiple PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Split into single-page PDFs</name>
+	<submenu>Scripts/Document/PDF: Combine, Split</submenu>
+	<unique-id>19684760</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Combine, Split/PDF: Split into single-page PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (landscape, 1x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>65569508</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (landscape, 1x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (landscape, 2x1)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>52717413</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (landscape, 2x1)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (landscape, 2x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>12122839</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (landscape, 2x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (landscape, 2x4)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>22033004</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (landscape, 2x4)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (landscape, 4x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>77630087</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (landscape, 4x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (portrait, 1x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>05819128</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (portrait, 1x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (portrait, 2x1)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>62209329</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (portrait, 2x1)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (portrait, 2x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>07326367</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (portrait, 2x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (portrait, 2x4)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>20896974</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (portrait, 2x4)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Layout (portrait, 4x2)</name>
+	<submenu>Scripts/Document/PDF: Multiple-page layout</submenu>
+	<unique-id>41793132</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Multiple-page layout/PDF: Layout (portrait, 4x2)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Find non-linearized PDFs</name>
+	<submenu>Scripts/Document/PDF: Optimize, Reduce</submenu>
+	<unique-id>21255310</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Optimize, Reduce/PDF: Find non-linearized PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Optimize for web (linearize)</name>
+	<submenu>Scripts/Document/PDF: Optimize, Reduce</submenu>
+	<unique-id>31383245</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Optimize, Reduce/PDF: Optimize for web (linearize)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Reduce (150 dpi, e-book)</name>
+	<submenu>Scripts/Document/PDF: Optimize, Reduce</submenu>
+	<unique-id>73130287</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Optimize, Reduce/PDF: Reduce (150 dpi, e-book)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Reduce (300 dpi, printer)</name>
+	<submenu>Scripts/Document/PDF: Optimize, Reduce</submenu>
+	<unique-id>05806883</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Optimize, Reduce/PDF: Reduce (300 dpi, printer)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set size (A3)</name>
+	<submenu>Scripts/Document/PDF: Page size</submenu>
+	<unique-id>84911659</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Page size/PDF: Set size (A3)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set size (A4)</name>
+	<submenu>Scripts/Document/PDF: Page size</submenu>
+	<unique-id>35535258</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Page size/PDF: Set size (A4)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set size (A5)</name>
+	<submenu>Scripts/Document/PDF: Page size</submenu>
+	<unique-id>53834093</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Page size/PDF: Set size (A5)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set size (US Legal)</name>
+	<submenu>Scripts/Document/PDF: Page size</submenu>
+	<unique-id>29078545</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Page size/PDF: Set size (US Legal)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set size (US Letter)</name>
+	<submenu>Scripts/Document/PDF: Page size</submenu>
+	<unique-id>51145651</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Page size/PDF: Set size (US Letter)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Rotate (180 deg)</name>
+	<submenu>Scripts/Document/PDF: Rotate</submenu>
+	<unique-id>07435169</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Rotate/PDF: Rotate (180 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Rotate (270 deg)</name>
+	<submenu>Scripts/Document/PDF: Rotate</submenu>
+	<unique-id>47734955</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Rotate/PDF: Rotate (270 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Rotate (90 deg)</name>
+	<submenu>Scripts/Document/PDF: Rotate</submenu>
+	<unique-id>32616631</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Rotate/PDF: Rotate (90 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Find password-protected PDFs</name>
+	<submenu>Scripts/Document/PDF: Security</submenu>
+	<unique-id>86463882</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Security/PDF: Find password-protected PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Remove password</name>
+	<submenu>Scripts/Document/PDF: Security</submenu>
+	<unique-id>71315608</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Security/PDF: Remove password&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Set a password</name>
+	<submenu>Scripts/Document/PDF: Security</submenu>
+	<unique-id>42270371</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Security/PDF: Set a password&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Find signed PDFs</name>
+	<submenu>Scripts/Document/PDF: Signatures</submenu>
+	<unique-id>32559271</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Signatures/PDF: Find signed PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Show signatures</name>
+	<submenu>Scripts/Document/PDF: Signatures</submenu>
+	<unique-id>76518434</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Signatures/PDF: Show signatures&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Find non-searchable PDFs</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>56815722</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Find non-searchable PDFs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (English)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>43285483</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (English)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (French)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>64710794</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (French)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (German)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>39013462</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (German)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (Italian)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>35355714</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (Italian)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (Portuguese)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>08366957</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (Portuguese)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (Russian)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>87989324</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (Russian)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Perform OCR (Spanish)</name>
+	<submenu>Scripts/Document/PDF: Text recognition (OCR)</submenu>
+	<unique-id>14252994</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Text recognition (OCR)/PDF: Perform OCR (Spanish)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Convert to PDFA-2b</name>
+	<submenu>Scripts/Document/PDF: Tools</submenu>
+	<unique-id>50556380</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Tools/PDF: Convert to PDFA-2b&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Extract images</name>
+	<submenu>Scripts/Document/PDF: Tools</submenu>
+	<unique-id>60958264</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Tools/PDF: Extract images&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Remove metadata</name>
+	<submenu>Scripts/Document/PDF: Tools</submenu>
+	<unique-id>69069701</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Tools/PDF: Remove metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Add watermark (over)</name>
+	<submenu>Scripts/Document/PDF: Watermark</submenu>
+	<unique-id>00274791</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Watermark/PDF: Add watermark (over)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>PDF: Add watermark (under)</name>
+	<submenu>Scripts/Document/PDF: Watermark</submenu>
+	<unique-id>52624086</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Document/PDF: Watermark/PDF: Add watermark (under)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Decrypt</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>10242268</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Decrypt&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Encrypt with keys</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>09038941</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Encrypt with keys&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Encrypt with keys (ASCII)</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>77117867</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Encrypt with keys (ASCII)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Encrypt with password</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>66904987</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Encrypt with password&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Encrypt with password (ASCII)</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>46913708</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Encrypt with password (ASCII)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Import keys</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>34916766</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Import keys&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Sign</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>30293594</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Sign&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Sign and Encrypt with keys</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>19462598</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Sign and Encrypt with keys&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Sign and Encrypt with keys (ASCII)</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>04805361</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Sign and Encrypt with keys (ASCII)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Sign (ASCII)</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>52134992</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Sign (ASCII)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Sign (detached signature)</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>45985972</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Sign (detached signature)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Verify signature</name>
+	<submenu>Scripts/Encryption</submenu>
+	<unique-id>38396041</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Encryption/Verify signature&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Colorspace to gray</name>
+	<submenu>Scripts/Image/Image: Color</submenu>
+	<unique-id>37848412</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Color/Image: Colorspace to gray&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Desaturate</name>
+	<submenu>Scripts/Image/Image: Color</submenu>
+	<unique-id>40225840</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Color/Image: Desaturate&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Generate multiple hues</name>
+	<submenu>Scripts/Image/Image: Color</submenu>
+	<unique-id>72686244</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Color/Image: Generate multiple hues&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Combine into a GIF</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>84418510</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Combine into a GIF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Combine into a PDF</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>34788034</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Combine into a PDF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Split into 2 (horizontal)</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>73412699</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Split into 2 (horizontal)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Split into 2 (vertical)</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>54861677</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Split into 2 (vertical)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Split into 4</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>76956026</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Split into 4&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Stack (horizontal)</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>86735707</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Stack (horizontal)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Stack (vertical)</name>
+	<submenu>Scripts/Image/Image: Combine, Split</submenu>
+	<unique-id>63425381</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Combine, Split/Image: Stack (vertical)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to AVIF</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>77927958</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to AVIF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to GIF</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>48610711</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to GIF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to HEIC</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>46233947</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to HEIC&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to JPG</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>60537767</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to JPG&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to JXL</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>32014987</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to JXL&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to PNG</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>63190519</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to PNG&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to TIFF</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>13676941</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to TIFF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Convert to WebP</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>65701179</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Convert to WebP&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Export to PDF</name>
+	<submenu>Scripts/Image/Image: Convert</submenu>
+	<unique-id>76508553</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Convert/Image: Export to PDF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Automatic crop</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>67452945</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Automatic crop&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Automatic crop (15 pct)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>98901076</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Automatic crop (15 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (1080x1080)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>57948418</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (1080x1080)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (1920x1080)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>56191817</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (1920x1080)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (2560x1440)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>35589926</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (2560x1440)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (25 pct)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>90348575</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (25 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (3840x2160)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>51504839</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (3840x2160)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (50 pct)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>27119460</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (50 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (512x512)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>51288080</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (512x512)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Resize (75 pct)</name>
+	<submenu>Scripts/Image/Image: Crop, Resize</submenu>
+	<unique-id>35642189</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Crop, Resize/Image: Resize (75 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Flip (horizontal)</name>
+	<submenu>Scripts/Image/Image: Flip, Rotate</submenu>
+	<unique-id>00726927</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Flip, Rotate/Image: Flip (horizontal)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Flip (vertical)</name>
+	<submenu>Scripts/Image/Image: Flip, Rotate</submenu>
+	<unique-id>28656765</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Flip, Rotate/Image: Flip (vertical)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Rotate (180 deg)</name>
+	<submenu>Scripts/Image/Image: Flip, Rotate</submenu>
+	<unique-id>47115901</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Flip, Rotate/Image: Rotate (180 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Rotate (270 deg)</name>
+	<submenu>Scripts/Image/Image: Flip, Rotate</submenu>
+	<unique-id>23333991</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Flip, Rotate/Image: Rotate (270 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Rotate (90 deg)</name>
+	<submenu>Scripts/Image/Image: Flip, Rotate</submenu>
+	<unique-id>58257155</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Flip, Rotate/Image: Rotate (90 deg)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Create PNG icon (128 px)</name>
+	<submenu>Scripts/Image/Image: Icons</submenu>
+	<unique-id>69330705</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Icons/Image: Create PNG icon (128 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Create PNG icon (256 px)</name>
+	<submenu>Scripts/Image/Image: Icons</submenu>
+	<unique-id>80173082</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Icons/Image: Create PNG icon (256 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Create PNG icon (512 px)</name>
+	<submenu>Scripts/Image/Image: Icons</submenu>
+	<unique-id>28181680</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Icons/Image: Create PNG icon (512 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Create PNG icon (64 px)</name>
+	<submenu>Scripts/Image/Image: Icons</submenu>
+	<unique-id>20046672</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Icons/Image: Create PNG icon (64 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Remove metadata</name>
+	<submenu>Scripts/Image/Image: Metadata, Exif</submenu>
+	<unique-id>78621325</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Metadata, Exif/Image: Remove metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Rename from metadata</name>
+	<submenu>Scripts/Image/Image: Metadata, Exif</submenu>
+	<unique-id>58597432</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Metadata, Exif/Image: Rename from metadata&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Optimize PNG</name>
+	<submenu>Scripts/Image/Image: Optimize, Reduce</submenu>
+	<unique-id>66382008</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Optimize, Reduce/Image: Optimize PNG&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Reduce (JPG, 1000kB max)</name>
+	<submenu>Scripts/Image/Image: Optimize, Reduce</submenu>
+	<unique-id>34863810</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Optimize, Reduce/Image: Reduce (JPG, 1000kB max)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Reduce (JPG, 500kB max)</name>
+	<submenu>Scripts/Image/Image: Optimize, Reduce</submenu>
+	<unique-id>42921426</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Optimize, Reduce/Image: Reduce (JPG, 500kB max)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Find similar (65 pct)</name>
+	<submenu>Scripts/Image/Image: Similarity</submenu>
+	<unique-id>09830653</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Similarity/Image: Find similar (65 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Find similar (75 pct)</name>
+	<submenu>Scripts/Image/Image: Similarity</submenu>
+	<unique-id>46207331</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Similarity/Image: Find similar (75 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Find similar (85 pct)</name>
+	<submenu>Scripts/Image/Image: Similarity</submenu>
+	<unique-id>17788572</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Similarity/Image: Find similar (85 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Find similar (95 pct)</name>
+	<submenu>Scripts/Image/Image: Similarity</submenu>
+	<unique-id>15547753</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Similarity/Image: Find similar (95 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Compress to SVGZ</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>57393505</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Compress to SVGZ&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Decompress SVGZ</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>00942348</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Decompress SVGZ&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Export to PDF</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>04752924</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Export to PDF&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Export to PNG (1024 px)</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>43309799</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Export to PNG (1024 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Export to PNG (256 px)</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>55946600</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Export to PNG (256 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Export to PNG (512 px)</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>43376113</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Export to PNG (512 px)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Replace fonts to Charter</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>05783737</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Replace fonts to Charter&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Replace fonts to Helvetica</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>39451115</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Replace fonts to Helvetica&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>SVG: Replace fonts to Times</name>
+	<submenu>Scripts/Image/Image: SVG files</submenu>
+	<unique-id>42365032</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: SVG files/SVG: Replace fonts to Times&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (English)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>58359668</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (English)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (French)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>91043114</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (French)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (German)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>59038147</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (German)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (Italian)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>01354049</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (Italian)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (Portuguese)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>41853600</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (Portuguese)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (Russian)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>04620901</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (Russian)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Perform OCR (Spanish)</name>
+	<submenu>Scripts/Image/Image: Text recognition (OCR)</submenu>
+	<unique-id>95254425</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Text recognition (OCR)/Image: Perform OCR (Spanish)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Background to alpha</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>63808989</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Background to alpha&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Background to alpha (15 pct)</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>11934631</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Background to alpha (15 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color alpha to black</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>62122194</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color alpha to black&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color alpha to magenta</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>39820012</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color alpha to magenta&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color alpha to white</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>47217045</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color alpha to white&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color black to alpha</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>98137231</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color black to alpha&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color black to alpha (15 pct)</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>28879524</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color black to alpha (15 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color magenta to alpha</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>78692249</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color magenta to alpha&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color magenta to alpha (15 pct)</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>51045475</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color magenta to alpha (15 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color white to alpha</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>88169178</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color white to alpha&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Color white to alpha (15 pct)</name>
+	<submenu>Scripts/Image/Image: Transparency</submenu>
+	<unique-id>99941615</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Transparency/Image: Color white to alpha (15 pct)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (center)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>31439002</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (center)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (north)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>83386816</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (north)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (northeast)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>77796072</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (northeast)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (northwest)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>30112345</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (northwest)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (south)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>19713040</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (south)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (southeast)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>38221898</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (southeast)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Image: Add watermark (southwest)</name>
+	<submenu>Scripts/Image/Image: Watermark</submenu>
+	<unique-id>08985265</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Image/Image: Watermark/Image: Add watermark (southwest)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create hard link here</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>09888724</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Create hard link here&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create hard link to...</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>68560517</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Create hard link to...&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create symbolic link here</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>99301105</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Create symbolic link here&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create symbolic link to...</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>65739684</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Create symbolic link to...&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Find broken links</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>99077968</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Find broken links&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List hard links</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>93713923</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/List hard links&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>List symbolic links</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>96252808</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/List symbolic links&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Paste as hard link</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>15529196</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Paste as hard link&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Paste as symbolic link</name>
+	<submenu>Scripts/Links</submenu>
+	<unique-id>37674411</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Links/Paste as symbolic link&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Git: Clone URLs</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>26430693</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/Git: Clone URLs&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Git: Open repository website</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>06528557</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/Git: Open repository website&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Git: Reset and pull</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>84701625</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/Git: Reset and pull&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>IP: Scanner</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>80442536</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/IP: Scanner&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>URL: Check HTTP status</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>39250775</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/URL: Check HTTP status&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>URL: Download file</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>12320733</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/URL: Download file&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>URL: Show HTTP headers</name>
+	<submenu>Scripts/Network and Internet</submenu>
+	<unique-id>07881620</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Network and Internet/URL: Show HTTP headers&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Code editor</name>
+	<submenu>Scripts/Open with</submenu>
+	<unique-id>09005014</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Open with/Code editor&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Disk usage analyzer</name>
+	<submenu>Scripts/Open with</submenu>
+	<unique-id>85179095</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Open with/Disk usage analyzer&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Terminal</name>
+	<submenu>Scripts/Open with</submenu>
+	<unique-id>23268647</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Open with/Terminal&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Concatenate multiple files</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>29813665</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Concatenate multiple files&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Convert tabs to 4 spaces</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>21813835</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Convert tabs to 4 spaces&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Encode to UTF-8</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>74139062</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Encode to UTF-8&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List encodings</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>02648704</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List encodings&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List issues</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>86223577</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List issues&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List line breaks</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>31148748</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List line breaks&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List line counts</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>01895446</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List line counts&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List line lengths</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>20531137</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List line lengths&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: List word counts</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>75096752</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: List word counts&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Normalize (UTF-8, recursive)</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>33409245</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Normalize (UTF-8, recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Remove accents</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>60772989</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Remove accents&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Text: Remove trailing spaces</name>
+	<submenu>Scripts/Plain text</submenu>
+	<unique-id>45137302</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Plain text/Text: Remove trailing spaces&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: Change dashes to spaces</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>75019614</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: Change dashes to spaces&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: Change spaces to dashes</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>22739921</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: Change spaces to dashes&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: Remove accents</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>90224814</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: Remove accents&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: Remove parentheses blocks</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>43506515</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: Remove parentheses blocks&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To lowercase</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>33240133</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To lowercase&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To lowercase (recursive)</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>02017918</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To lowercase (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To sentence case</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>82859889</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To sentence case&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To title case</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>59623097</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To title case&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To uppercase</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>94610203</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To uppercase&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Rename: To uppercase (recursive)</name>
+	<submenu>Scripts/Rename files</submenu>
+	<unique-id>72467885</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Rename files/Rename: To uppercase (recursive)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Create backup (via Rsync)</name>
+	<submenu>Scripts/Security and Recovery</submenu>
+	<unique-id>06102372</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Security and Recovery/Create backup (via Rsync)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>File carving (via Foremost)</name>
+	<submenu>Scripts/Security and Recovery</submenu>
+	<unique-id>62763922</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Security and Recovery/File carving (via Foremost)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>File carving (via PhotoRec)</name>
+	<submenu>Scripts/Security and Recovery</submenu>
+	<unique-id>86340298</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Security and Recovery/File carving (via PhotoRec)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Scan for malware (via ClamAV)</name>
+	<submenu>Scripts/Security and Recovery</submenu>
+	<unique-id>13460410</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Security and Recovery/Scan for malware (via ClamAV)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Scan for malware (via Lenspect)</name>
+	<submenu>Scripts/Security and Recovery</submenu>
+	<unique-id>07856616</unique-id>
+	<command>bash &quot;/home/wizzdom/.local/share/scripts/Security and Recovery/Scan for malware (via Lenspect)&quot; %F</command>
+	<description></description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<text-files/>
+	<video-files/>
+	<other-files/>
+</action>
+</actions>
