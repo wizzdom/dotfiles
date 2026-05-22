@@ -19,6 +19,24 @@ return { -- LSP Configuration & Plugins
 		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
+		-- Make sure Ansible files get the correct filetype so ansiblels attaches.
+		-- (Lua patterns, not globs)
+		vim.filetype.add({
+			pattern = {
+				[".*/ansible/.*%.ya?ml"] = "yaml.ansible",
+				[".*/playbooks/.*%.ya?ml"] = "yaml.ansible",
+				[".*/roles/.*/tasks/.*%.ya?ml"] = "yaml.ansible",
+				[".*/roles/.*/handlers/.*%.ya?ml"] = "yaml.ansible",
+				[".*/group_vars/.*%.ya?ml"] = "yaml.ansible",
+				[".*/host_vars/.*%.ya?ml"] = "yaml.ansible",
+			},
+		})
+		vim.filetype.add({
+			pattern = {
+				[".*/nomad/.*%.hcl"] = "hcl.nomad",
+			},
+		})
+
 		autocmd("LspAttach", {
 			group = augroup("kickstart-lsp-attach", { clear = true }),
 			callback = function(event)
