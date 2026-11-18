@@ -2,7 +2,7 @@
 
 -- Specify GPU to use
 
-hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
+-- hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
 
 -- Monitors
 
@@ -19,7 +19,7 @@ for i = 1, 5 do
 end
 -- secondary (right) Monitor
 for i = 6, 10 do
-	hl.workspace_rule({ workspace = i, monitor = "HDMI-A-1" })
+	hl.workspace_rule({ workspace = i, monitor = "HDMI-A-2" })
 end
 
 -- Autostart apps
@@ -30,6 +30,6 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("[workspace 1 silent] zen-browser", { workspace = 1 })
 	hl.exec_cmd("[workspace 10 silent] thunderbird", { workspace = 10 })
 	hl.exec_cmd("jamesdsp --tray")
-	hl.exec_cmd("[workspace 7 silent] vesktop", { workspace = 7 })
+	-- hl.exec_cmd("[workspace 7 silent] vesktop", { workspace = 7 })
 	hl.exec_cmd("openrgb --server")
 end)

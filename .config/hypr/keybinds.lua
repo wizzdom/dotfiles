@@ -12,16 +12,17 @@ local browser = "zen-browser"
 local terminal = "ghostty"
 local fileManager = "thunar"
 local noctalia = "qs -c noctalia-shell"
-local menu = noctalia .. " " .. "ipc call launcher toggle"
+local ipc = "noctalia msg "
+local menu = ipc .. "panel-toggle launcher"
 local runMenu = noctalia .. " " .. "ipc call launcher command"
-local clipboard = noctalia .. " " .. "ipc call launcher clipboard"
-local emoji = noctalia .. " " .. "ipc call launcher emoji"
-local sessionMenu = noctalia .. " " .. "ipc call sessionMenu toggle"
+local clipboard = ipc .. "panel-toggle clipboard"
+local emoji = ipc .. "panel-toggle liamwh/emoji-picker:wide"
+local sessionMenu = ipc .. "panel-toggle session"
 local dmenu = "$HOME/.config/noctalia/plugins/dmenu/noctalia-dmenu"
 local rbwMenu = "rofi-rbw --selector " .. dmenu
 local lightsOff = "hyprctl dispatch dpms toggle && openrgb -p OFF"
-local wallpaperMenu = "$HOME/scripts/video-wall-select.sh"
-local audioMenu = noctalia .. "ipc call volume togglePanel"
+local wallpaperMenu = noctalia .. " " .. "ipc call plugin:linux-wallpaperengine-controller toggle"
+local audioMenu = noctalia .. " " .. "ipc call volume togglePanel"
 
 local function joinKeys(keys)
 	return table.concat(keys, " + ")
@@ -46,7 +47,7 @@ hl.bind(joinKeys({ mainMod, "SHIFT", "E" }), hl.dsp.exec_cmd(sessionMenu))
 hl.bind(joinKeys({ mainMod, "P" }), hl.dsp.exec_cmd(rbwMenu))
 hl.bind(joinKeys({ mainMod, "W" }), hl.dsp.exec_cmd(wallpaperMenu))
 hl.bind(joinKeys({ mainMod, "M" }), hl.dsp.exec_cmd(lightsOff))
-hl.bind(joinKeys({ mainMod, "M" }), hl.dsp.exec_cmd(audioMenu))
+hl.bind(joinKeys({ mainMod, "A" }), hl.dsp.exec_cmd(audioMenu))
 
 hl.bind(joinKeys({ mainMod, "F1" }), hl.dsp.exec_cmd("$HOME/.config/hypr/gamemode.sh"))
 
@@ -80,13 +81,19 @@ for i = 1, 10 do
 	hl.bind(joinKeys({ mainMod, "SHIFT", key }), hl.dsp.window.move({ workspace = i }))
 end
 
+for i = 11, 20 do
+	local key = i % 10 -- 10 maps to key 0
+	hl.bind(joinKeys({ mainMod, "ALT", key }), hl.dsp.focus({ workspace = i }))
+	hl.bind(joinKeys({ mainMod, "ALT", "SHIFT", key }), hl.dsp.window.move({ workspace = i }))
+end
+
 -- Example special workspace (scratchpad)
 hl.bind(joinKeys({ mainMod, "S" }), hl.dsp.workspace.toggle_special("magic"))
 hl.bind(joinKeys({ mainMod, "SHIFT", "S" }), hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
-hl.bind(joinKeys({ mainMod, "mouse_down" }), hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(joinKeys({ mainMod, "mouse_up" }), hl.dsp.focus({ workspace = "e-1" }))
+hl.bind(joinKeys({ mainMod, "mouse_up" }), hl.dsp.focus({ workspace = "e+1" }))
+hl.bind(joinKeys({ mainMod, "mouse_down" }), hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(joinKeys({ mainMod, "mouse:272" }), hl.dsp.window.drag(), { mouse = true })

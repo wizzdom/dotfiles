@@ -17,6 +17,7 @@ hl.monitor({
 	output = "desc:HKC OVERSEAS LIMITED GN07 0000000000001",
 	mode = "2560x1440@170.0",
 	position = "878x1918",
+	vrr = true,
 	scale = 1.0,
 })
 
